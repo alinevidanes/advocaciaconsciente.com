@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advocacia Consciente | Saúde mental na advocacia, com método científico</title>
+<meta name="description" content="PAC — Programa Advocacia Consciente®: protocolo de 6 semanas baseado em mindfulness e neurociência, com avaliação antes e depois, para escritórios de advocacia e profissionais do Direito. Criado pela advogada Aline Vidanes.">
+<link rel="canonical" href="https://advocaciaconsciente.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Advocacia Consciente — Advogar sem viver no limite">
+<meta property="og:description" content="Protocolo de 6 semanas baseado em evidências, para escritórios e profissionais do Direito.">
+<meta property="og:url" content="https://advocaciaconsciente.com/">
+<meta property="og:image" content="https://advocaciaconsciente.com/og.jpg">
+<meta name="theme-color" content="#141312">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#141312; --black-2:#1E1C1A; --sand:#D8C7AE; --sand-2:#F3EEE6; --sand-3:#E4D7C3;
+  --ivory:#FFFFFF; --white:#FFFFFF; --line:#E2D8C8; --line-dark:#34302C;
+  --ink:#141312; --ink-2:#3D3934; --muted:#6F665C; --bronze:#7A5C3A;
+  --display:'Newsreader',Georgia,serif; --sans:'Jost',system-ui,-apple-system,sans-serif;
+  --pad:clamp(20px,6vw,96px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:17.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+main{overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;margin:0;line-height:1.12}
+p{margin:0}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze);font-weight:500}
+.dark .eyebrow{color:var(--sand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:14px 32px;font-family:var(--sans);font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;text-decoration:none;border:1px solid var(--black);transition:background .25s,color .25s;cursor:pointer;text-align:center}
+.btn-black{background:var(--black);color:var(--ivory)}
+.btn-black:hover{background:var(--bronze);border-color:var(--bronze)}
+.btn-line{background:transparent;color:var(--black)}
+.btn-line:hover{background:var(--black);color:var(--ivory)}
+.btn-sand{background:var(--sand);border-color:var(--sand);color:var(--black)}
+.btn-sand:hover{background:var(--ivory);border-color:var(--ivory)}
+.sec{padding-top:clamp(80px,10vw,136px);padding-bottom:clamp(80px,10vw,136px)}
+.h2{font-size:clamp(36px,4.4vw,60px);margin:18px 0 22px;letter-spacing:-.01em}
+.h2 em{font-style:italic;color:var(--bronze)}
+.dark .h2 em{color:var(--sand)}
+.lead{font-size:clamp(17.5px,1.4vw,19.5px);color:var(--ink-2);max-width:720px}
+.dark{background:var(--black);color:var(--ivory)}
+.dark .lead{color:#CFC6B8}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font-family:var(--display);font-weight:400;font-size:24px;letter-spacing:.02em}
+.logo small{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.menu{display:flex;align-items:center;gap:30px;font-size:15px}
+.menu a{text-decoration:none}
+.menu a:not(.btn):hover{color:var(--bronze)}
+.menu .btn{min-height:44px;padding:10px 20px;font-size:12.5px}
+.burger{display:none;background:none;border:0;width:48px;height:48px;padding:12px;cursor:pointer;color:var(--black)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,96px);align-items:center;padding-top:clamp(40px,6vw,88px);padding-bottom:clamp(56px,7vw,104px)}
+.hero h1{font-size:clamp(48px,6.2vw,92px);letter-spacing:-.015em;margin:26px 0 28px}
+.hero h1 em{font-style:italic;color:var(--bronze)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.hero .micro{font-size:14px;color:var(--muted);margin-top:14px}
+.hero-img{position:relative}
+.hero-img:before{content:"";position:absolute;inset:28px -28px -28px 28px;background:var(--sand-2);z-index:-1}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.sign{position:absolute;left:-36px;bottom:-28px;background:var(--black);color:var(--ivory);padding:18px 24px;max-width:300px}
+.sign b{font-family:var(--display);font-weight:400;font-size:21px;display:block}
+.sign span{font-size:13px;color:#CFC6B8;letter-spacing:.02em}
+
+/* trust */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white)}
+.trust .wrap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;padding-top:30px;padding-bottom:30px}
+.trust div{font-size:13.5px;color:var(--muted);line-height:1.5;border-left:1px solid var(--line);padding-left:18px}
+.trust b{display:block;font-family:var(--display);font-weight:400;font-size:19px;color:var(--ink);margin-bottom:2px}
+
+/* dor */
+.pain{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px)}
+.pain ul{list-style:none;padding:0;margin:0}
+.pain li{padding:18px 0;border-top:1px solid var(--line);font-size:17px;color:var(--ink-2);display:flex;gap:16px}
+.pain li:last-child{border-bottom:1px solid var(--line)}
+.pain li span{font-family:var(--display);color:var(--bronze);font-size:20px;line-height:1.3;min-width:28px}
+.pullquote{font-family:var(--display);font-style:italic;font-size:clamp(24px,2.4vw,32px);line-height:1.35;margin-top:28px;color:var(--ink)}
+
+/* virada */
+.shift{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:56px}
+.shift div{background:var(--black);padding:36px}
+.shift h3{font-size:26px;margin-bottom:16px}
+.shift ul{margin:0;padding-left:18px;color:#CFC6B8;font-size:16px}
+.shift li{margin-bottom:8px}
+.shift .after h3{color:var(--sand)}
+
+/* história */
+.story{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,7vw,112px);align-items:center}
+.story img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.story p{color:var(--ink-2);margin-bottom:16px}
+.story .sig{font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink);margin-top:8px}
+
+/* protocolo */
+.timeline{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));margin-top:56px;border-top:1px solid var(--black)}
+.tl{padding:18px 14px 0 0;position:relative}
+.tl:before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;background:var(--black);border-radius:50%}
+.tl.m:before{background:var(--bronze);width:11px;height:11px;top:-6px}
+.tl small{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.tl b{display:block;font-family:var(--display);font-weight:400;font-size:18px;line-height:1.25;margin-top:4px}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:72px}
+.pillar{border-top:1px solid var(--line);padding-top:24px}
+.pillar em{font-family:var(--display);font-size:44px;color:var(--sand);font-style:italic;line-height:1}
+.pillar h3{font-size:28px;margin:12px 0 10px}
+.pillar p{color:var(--ink-2);font-size:16px}
+.tools{margin-top:72px;background:#FAF8F5;border:1px solid var(--line);padding:clamp(28px,4vw,48px)}
+.tools h3{font-size:28px;margin-bottom:6px}
+.tools p{color:var(--ink-2);font-size:15.5px}
+.tools ul{columns:2;column-gap:48px;margin:22px 0 0;padding:0;list-style:none}
+.tools li{break-inside:avoid;padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
+
+/* autoavaliação */
+.quiz{background:#FAF8F5;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quiz .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,6vw,96px);align-items:start}
+.qbox{background:var(--white);padding:clamp(24px,3.5vw,44px);border:1px solid var(--line)}
+.q{padding:18px 0;border-bottom:1px solid var(--line)}
+.q legend{font-size:16.5px;font-weight:500;margin-bottom:10px;padding:0}
+.q fieldset{border:0;margin:0;padding:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:inline-block;padding:9px 14px;border:1px solid var(--line);font-size:14px;color:var(--ink-2);min-height:44px;line-height:24px}
+.opts input:checked+span{background:var(--black);color:var(--ivory);border-color:var(--black)}
+.opts input:focus-visible+span{outline:2px solid var(--bronze);outline-offset:2px}
+.result{display:none;margin-top:24px;padding:26px;background:var(--black);color:var(--ivory)}
+.result.show{display:block}
+.result h3{font-size:28px;color:var(--sand);margin-bottom:10px}
+.result p{color:#CFC6B8;font-size:16px;margin-bottom:10px}
+.disc{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.55}
+
+/* escritórios */
+.office{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px)}
+.reg{border-top:1px solid var(--line-dark);padding:22px 0}
+.reg small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
+.reg h3{font-size:24px;margin:8px 0}
+.reg p{color:#CFC6B8;font-size:16px}
+.diff{list-style:none;padding:0;margin:0}
+.diff li{padding:20px 0;border-top:1px solid var(--line-dark)}
+.diff b{display:block;font-family:var(--display);font-weight:400;font-size:22px;color:var(--ivory);margin-bottom:4px}
+.diff span{color:#CFC6B8;font-size:16px}
+.note{font-size:13px;color:#9A9083;margin-top:40px;max-width:900px}
+
+/* produtos */
+.prod-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:56px}
+.prod{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column}
+.prod .top{background:#F6F2EC;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.prod .top img{height:84%;width:auto;box-shadow:12px 16px 30px rgba(20,19,18,.25)}
+.prod .top.photo img{height:100%;width:100%;object-fit:cover;box-shadow:none}
+.prod .top.type{background:var(--black);color:var(--sand);font-family:var(--display);font-size:30px;font-style:italic}
+.prod .body{padding:28px;display:flex;flex-direction:column;gap:10px;flex-grow:1}
+.prod small{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--bronze)}
+.prod h3{font-size:26px}
+.prod p{color:var(--ink-2);font-size:15.5px}
+.prod .btn{margin-top:auto;align-self:flex-start;min-height:46px;padding:10px 20px;font-size:12.5px}
+.badge-soon{align-self:flex-start;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line);padding:4px 10px;color:var(--muted)}
+
+/* ciência */
+.sci{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,96px);align-items:start}
+.sci-list{list-style:none;padding:0;margin:0}
+.sci-list li{padding:22px 0;border-top:1px solid var(--line)}
+.sci-list b{display:block;font-family:var(--display);font-weight:400;font-size:24px;margin-bottom:4px}
+.sci-list span{color:var(--ink-2);font-size:16px}
+details{margin-top:28px;border-top:1px solid var(--line);padding-top:18px}
+summary{cursor:pointer;font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+details ol{font-size:14px;color:var(--muted);line-height:1.6;padding-left:20px;margin-top:16px}
+details li{margin-bottom:8px}
+
+/* livro */
+.book{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(40px,7vw,112px);align-items:center}
+.book .cover{justify-self:center;width:min(320px,70vw);box-shadow:24px 32px 60px rgba(20,19,18,.3)}
+.book blockquote{margin:26px 0;font-family:var(--display);font-style:italic;font-size:clamp(22px,2vw,27px);line-height:1.4;padding-left:22px;border-left:1px solid var(--bronze)}
+.meta{font-size:14px;color:var(--muted);margin-bottom:28px}
+.book .ctas{display:flex;flex-wrap:wrap;gap:14px}
+
+/* faq */
+.faq{max-width:900px}
+.faq details{margin-top:0;padding:22px 0;border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{font-family:var(--display);font-size:23px;letter-spacing:0;text-transform:none;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font-family:var(--sans);font-weight:400;color:var(--bronze)}
+.faq details[open] summary:after{content:"–"}
+.faq details p{color:var(--ink-2);margin-top:12px;font-size:16.5px}
+
+/* contato */
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,96px)}
+form.f{display:flex;flex-direction:column;gap:10px}
+.f label{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#CFC6B8}
+.f input,.f select,.f textarea{min-height:52px;padding:0 16px;background:transparent;border:1px solid #4A443E;color:var(--ivory);font:inherit;font-size:16px}
+.f select option{color:var(--ink)}
+.f textarea{min-height:120px;padding:14px 16px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--sand);outline-offset:1px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.row2>div{display:flex;flex-direction:column;gap:8px}
+.consent{display:flex;gap:10px;font-size:13px!important;letter-spacing:0!important;text-transform:none!important;line-height:1.5;margin-top:6px}
+.consent input{min-height:18px!important;width:18px;flex-shrink:0;margin-top:2px}
+.hidden{display:none}
+.f .btn{margin-top:10px}
+.contact-list{list-style:none;padding:0;margin:28px 0 0;font-size:16px}
+.contact-list li{padding:10px 0;border-top:1px solid var(--line-dark);color:#CFC6B8}
+.contact-list a{text-decoration:none;color:var(--ivory)}
+
+footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;padding-top:64px;padding-bottom:40px}
+.foot .logo b{color:var(--ivory)}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ivory)}
+.foot nav{display:flex;flex-direction:column;gap:6px}
+.legal{border-top:1px solid #2A2724;padding-top:22px;padding-bottom:30px;font-size:13px;color:#857C70;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+.wa{position:fixed;right:22px;bottom:92px;z-index:60;display:flex;align-items:center;gap:10px;background:#1F7A4D;color:#fff;text-decoration:none;border-radius:999px;padding:13px 18px 13px 15px;box-shadow:0 10px 30px rgba(0,0,0,.2);font-size:14.5px;font-weight:500}
+.wa svg{width:24px;height:24px}
+
+@media (max-width:1080px){
+  .menu{position:fixed;inset:80px 0 auto 0;background:var(--ivory);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--pad) 26px;border-bottom:1px solid var(--line);display:none}
+  .menu.open{display:flex}
+  .menu a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line)}
+  .menu .btn{margin-top:16px}
+  .burger{display:block}
+  .trust .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .timeline{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:28px}
+  .prod-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .hero,.pain,.story,.quiz .wrap,.office,.sci,.book,.contact .wrap,.shift,.pillars{grid-template-columns:1fr}
+  .hero-img{max-width:440px}
+  .sign{left:-10px}
+  .story img{max-width:440px}
+  .tools ul{columns:1}
+}
+@media (max-width:600px){
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .timeline{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .prod-grid,.row2{grid-template-columns:1fr}
+  .hero .ctas .btn{width:100%}
+  .hero-img:before{inset:16px -12px -16px 16px}
+  .wa span{display:none}.wa{padding:14px}
+}
+@media (max-width:1200px){.sign span{display:none}.sign{padding:14px 20px}}
+.art-list{list-style:none;padding:0;margin:48px 0 0;border-top:1px solid var(--line)}
+.art-list a{display:grid;grid-template-columns:1fr auto;gap:8px 40px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.art-list a:hover h3{color:var(--bronze)}
+.art-list h3{font-size:clamp(22px,2vw,28px);transition:color .2s}
+.art-list p{grid-column:1;color:var(--ink-2);font-size:16px}
+.art-list span{grid-row:1/3;grid-column:2;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+@media (max-width:600px){.art-list a{grid-template-columns:1fr}.art-list span{grid-row:auto;grid-column:1}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#inicio" aria-label="Advocacia Consciente — início"><b>Advocacia Consciente</b><small>Programa PAC®</small></a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#protocolo">O protocolo</a>
+      <a href="#escritorios">Para escritórios</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#autoavaliacao">Autoavaliação</a>
+      <a href="#livro">O livro</a>
+      <a href="#artigos">Artigos</a>
+      <a class="btn btn-black" href="#contato">Solicitar proposta</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. HERO: dor + promessa + rosto -->
+<section id="inicio" class="wrap hero">
+  <div>
+    <span class="eyebrow">Saúde mental na advocacia · com base científica</span>
+    <h1>Advogar com excelência, <em>sem viver no limite.</em></h1>
+    <p class="lead">O PAC — Programa Advocacia Consciente® é um protocolo de 6 semanas, inspirado no MBSR e adaptado à advocacia, que ajuda advogados e equipes jurídicas a lidar melhor com pressão, prazos e conflitos — com medição do estresse percebido no início e no fim.</p>
+    <div class="ctas">
+      <a class="btn btn-black" href="#contato">Levar o PAC ao escritório</a>
+      <a class="btn btn-line" href="#autoavaliacao">Fazer a autoavaliação</a>
+    </div>
+    <p class="micro">Autoavaliação gratuita · 10 perguntas · cerca de 3 minutos</p>
+  </div>
+  <div class="hero-img">
+    <picture>
+      <source srcset="aline-hero-pb.webp" type="image/webp">
+      <img src="aline-hero-pb.jpg" alt="Aline Vidanes, criadora do Programa Advocacia Consciente" width="1100" height="1374" fetchpriority="high">
+    </picture>
+    <div class="sign"><b>Inspirado no MBSR</b><span>Programa de redução de estresse criado por Jon Kabat-Zinn na Faculdade de Medicina da Universidade de Massachusetts</span></div>
+  </div>
+</section>
+
+<!-- 2. CONFIANÇA -->
+<div class="trust" aria-label="Credenciais">
+  <div class="wrap">
+    <div><b>Advogada</b>OAB/SP e Ordem dos Advogados de Portugal</div>
+    <div><b>Mestrado</b>Mindfulness e Compaixão · Universidad de Zaragoza</div>
+    <div><b>Instrutora de mindfulness</b>Certificada · cursos desde 2020</div>
+    <div><b>Autora</b>Livro publicado pela Freitas Bastos Editora</div>
+    <div><b>Na imprensa</b>Correio Braziliense · LeiaSP</div>
+  </div>
+</div>
+
+<!-- 3. DOR -->
+<section class="wrap sec">
+  <div class="pain">
+    <div>
+      <span class="eyebrow">Você reconhece?</span>
+      <h2 class="h2">A advocacia ensina a cuidar do problema de todos. <em>Quase nunca do próprio.</em></h2>
+      <p class="lead">O estresse vira parte do trabalho — até começar a cobrar o preço no sono, no foco, nas relações e na saúde.</p>
+      <p class="pullquote">“Durante anos, normalizamos o peso do estresse como se fosse parte indissociável da toga.”</p>
+    </div>
+    <div>
+    <img src="https://images.pexels.com/photos/7643730/pexels-photo-7643730.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Profissional em traje social olhando pela janela de um escritório" width="1000" height="750" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;margin-bottom:28px" loading="lazy">
+    <ul>
+      <li><span>i.</span>A ansiedade aparece antes das audiências — mãos suadas, coração acelerado, a mente que dá branco.</li>
+      <li><span>ii.</span>O dia termina, mas a cabeça continua nos prazos. O descanso não descansa.</li>
+      <li><span>iii.</span>Uma taça de vinho para relaxar vira hábito. Depois, necessidade.</li>
+      <li><span>iv.</span>A irritação cresce com clientes, colegas e família — por coisas que antes eram simples.</li>
+      <li><span>v.</span>Semanas longas, sensação de empurrar a mesma pedra todos os dias.</li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 4. VIRADA: antes / depois (objetivos, não promessas) -->
+<section class="dark sec">
+  <div class="wrap">
+    <span class="eyebrow">O que muda</span>
+    <h2 class="h2">Não é sobre trabalhar menos. <em>É sobre trabalhar com outra relação com a pressão.</em></h2>
+    <div class="shift">
+      <div>
+        <h3>No piloto automático</h3>
+        <ul><li>Reação imediata a cada e-mail e cada urgência</li><li>Atenção fragmentada, decisões sob tensão</li><li>Conflitos que escalam</li><li>Cansaço que o fim de semana não resolve</li></ul>
+      </div>
+      <div class="after">
+        <h3>O que o protocolo treina</h3>
+        <ul><li>Pausas de atenção para responder, não reagir</li><li>Foco sustentado em tarefas complexas</li><li>Comunicação clara em conversas difíceis</li><li>Reconhecer sinais de esgotamento cedo</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. HISTÓRIA -->
+<section class="wrap sec">
+  <div class="story">
+    <picture>
+      <source srcset="aline-escritorio-pb.webp" type="image/webp">
+      <img src="aline-escritorio-pb.jpg" alt="Aline Vidanes em seu escritório" width="1000" height="1500">
+    </picture>
+    <div>
+      <span class="eyebrow">Por que eu criei o PAC</span>
+      <h2 class="h2">Eu também achei que o estresse fazia parte do pacote.</h2>
+      <p>Advogando, eu buscava uma forma de lidar com a pressão que coubesse na rotina — sem amarras religiosas. Encontrei no mindfulness, como definido por Jon Kabat-Zinn, uma prática laica, estudada pela ciência e aplicável em qualquer lugar, inclusive no fórum.</p>
+      <p>As mudanças foram tão claras que aprofundei os estudos: tornei-me instrutora certificada de mindfulness, fiz mestrado em Mindfulness e Compaixão na Universidad de Zaragoza e especializações em Neurociência do Comportamento e Neuropsicanálise.</p>
+      <p>Desde 2020 conduzo cursos presenciais e online. Daí nasceu o Programa de Redução de Estresse para Advogados — hoje PAC, Programa Advocacia Consciente® — e o livro que reúne o método.</p>
+      <p class="sig">Aline Vidanes</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PROTOCOLO -->
+<section id="protocolo" class="sec" style="background:#FAF8F5;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">O protocolo</span>
+    <h2 class="h2">Seis semanas. <em>Começo, meio e medição.</em></h2>
+    <p class="lead">Um encontro ao vivo por semana, cerca de 45 minutos de vídeos e leituras semanais, e cerca de 30 minutos de prática diária — formal e informal, integrada à rotina jurídica, com diário de práticas.</p>
+    <div class="timeline" aria-label="Linha do tempo do protocolo">
+      <div class="tl m"><small>Início</small><b>Avaliação inicial</b></div>
+      <div class="tl"><small>Semana 1</small><b>Consciência simples</b></div>
+      <div class="tl"><small>Semana 2</small><b>A atenção e o cérebro</b></div>
+      <div class="tl"><small>Semana 3</small><b>Lidar com os pensamentos</b></div>
+      <div class="tl"><small>Semana 4</small><b>Estresse: responder vs. reagir</b></div>
+      <div class="tl"><small>Semana 5</small><b>Emoções difíceis e dor física</b></div>
+      <div class="tl"><small>Semana 6</small><b>Mindfulness e compaixão</b></div>
+      <div class="tl m"><small>Final</small><b>Avaliação final</b></div>
+    </div>
+    <div class="pillars">
+      <div class="pillar"><em>i.</em><h3>Medido</h3><p>O estresse é avaliado no início e no fim com a Escala de Estresse Percebido (PSS-10, Cohen et al., 1983), instrumento validado e usado internacionalmente.</p></div>
+      <div class="pillar"><em>ii.</em><h3>Personalizado</h3><p>Práticas adaptadas a quatro perfis comportamentais do modelo DISC: decisivo, analítico, expressivo e paciente.</p></div>
+      <div class="pillar"><em>iii.</em><h3>Aplicável</h3><p>Pensado para caber entre prazos e audiências — presencial ou online, para equipes em diferentes cidades e países.</p></div>
+    </div>
+    <img src="https://images.pexels.com/photos/9617649/pexels-photo-9617649.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Mesa escura com notebook fechado e xícara de café sob um feixe de luz" width="1600" height="700" style="width:100%;aspect-ratio:21/8;object-fit:cover;margin-top:72px" loading="lazy">
+    <div class="tools" style="margin-top:0">
+      <h3>Algumas ferramentas do método</h3>
+      <p>Práticas laicas, descritas no livro <em>Advocacia Consciente</em> e treinadas como habilidades.</p>
+      <ul>
+        <li>Pausas conscientes no escritório</li>
+        <li>Respiração de 3 minutos para advogados</li>
+        <li>Escutar somente escutando</li>
+        <li>Observação de pensamentos e emoções</li>
+        <li>Prática dos 5 sentidos no escritório</li>
+        <li>Autocompaixão na advocacia</li>
+        <li>Body scan para advogados</li>
+        <li>Comunicação assertiva em conflitos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 7. AUTOAVALIAÇÃO (reciprocidade) -->
+<section id="autoavaliacao" class="quiz sec">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Autoavaliação gratuita</span>
+      <h2 class="h2">Como está a sua relação com o estresse <em>hoje?</em></h2>
+      <p class="lead">Use a Escala de Estresse Percebido (PSS-10), a mesma aplicada no início e no fim do PAC. São 10 perguntas sobre seus pensamentos e sentimentos nos <strong>últimos 30 dias</strong>. Responda com a primeira opção que vier à mente.</p>
+      <p class="disc">Escala criada por Cohen, Kamarck &amp; Mermelstein (1983). A pontuação vai de 0 a 40; as faixas (0–13 baixo, 14–26 moderado, 27–40 alto) são uma referência de uso comum, não pontos de corte clínicos. Esta autoavaliação é educativa e não constitui diagnóstico. Em caso de sofrimento intenso, procure um profissional de saúde.</p>
+    </div>
+    <div class="qbox">
+      <form id="quiz" onsubmit="return false">
+        <div id="qs"></div>
+        <button class="btn btn-black" type="button" id="calc" style="margin-top:24px">Ver meu resultado</button>
+        <p id="qerr" class="disc" role="alert"></p>
+      </form>
+      <div class="result" id="result" aria-live="polite">
+        <h3 id="rt"></h3>
+        <p id="rd"></p>
+        <p>Quer receber a prática <em>Respiração de 3 minutos para advogados</em> e avisos das próximas turmas?</p>
+        <form class="f" name="autoavaliacao" method="POST" action="https://formsubmit.co/aline@alinevidanes.com" style="margin-top:14px">
+      <input type="hidden" name="_subject" value="Nova autoavaliação — Advocacia Consciente">
+      <input type="hidden" name="_next" value="https://advocaciaconsciente.com/obrigado.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="pontuacao" id="score-field">
+          <div class="row2">
+            <div><label for="a-nome">Nome</label><input id="a-nome" name="nome" autocomplete="name" required></div>
+            <div><label for="a-email">E-mail</label><input id="a-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <label class="consent"><input type="checkbox" name="consentimento" required><span>Concordo em receber conteúdos da Advocacia Consciente e li a <a href="politica-de-privacidade.html" style="color:var(--sand)">Política de Privacidade</a>.</span></label>
+          <button class="btn btn-sand" type="submit">Quero receber</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. ESCRITÓRIOS (lógica + objeções) -->
+<div style="height:clamp(220px,32vw,420px);background:#141312 url(https://images.pexels.com/photos/19841124/pexels-photo-19841124.jpeg?auto=compress&cs=tinysrgb&w=1800) center/cover no-repeat" role="img" aria-label="Sala de reuniões com mesa escura junto a uma janela ampla"></div>
+<section id="escritorios" class="dark sec">
+  <div class="wrap">
+    <span class="eyebrow">Para sócios e gestores</span>
+    <h2 class="h2">Saúde mental virou tema de gestão. <em>E de conformidade.</em></h2>
+    <div class="office">
+      <div>
+        <div class="reg"><small>NR-1 · desde 26/05/2026</small><h3>Riscos psicossociais</h3><p>Fatores como estresse, sobrecarga e assédio devem integrar o gerenciamento de riscos ocupacionais das organizações com empregados — incluindo escritórios. O primeiro ano de fiscalização é orientativo.</p></div>
+        <div class="reg"><small>Lei nº 14.831/2024</small><h3>Certificado Empresa Promotora da Saúde Mental</h3><p>Certificação federal para organizações com ações de promoção da saúde mental, bem-estar dos trabalhadores e transparência.</p></div>
+        <div class="reg"><small>Brasil · INSS</small><h3>Afastamentos em alta</h3><p>Em 2024, mais de 472 mil afastamentos do trabalho foram concedidos por transtornos mentais no Brasil — alta de 68% em relação ao ano anterior (Ministério da Previdência Social).</p></div>
+        <div class="reg"><small>Evidência</small><h3>O custo dos estressores</h3><p>Revisão de estudos associou alta demanda de trabalho a 35% mais chances de doenças diagnosticadas e jornadas longas a quase 20% mais mortalidade (Goh, Pfeffer &amp; Zenios, 2015).</p></div>
+      </div>
+      <div>
+        <h3 style="font-size:30px;margin-bottom:10px">Por que muitos programas de bem-estar não funcionam — e o que o PAC faz diferente</h3>
+        <ul class="diff">
+          <li><b>Medem presença, não mudança.</b><span>O PAC mede o estresse percebido no início e no fim, com escala validada.</span></li>
+          <li><b>São iguais para todos.</b><span>O PAC adapta as práticas a perfis comportamentais.</span></li>
+          <li><b>Somam tarefas a quem já está sobrecarregado.</b><span>As práticas são curtas e integradas à rotina.</span></li>
+          <li><b>São genéricos.</b><span>O PAC foi criado por uma advogada, para a realidade da advocacia.</span></li>
+        </ul>
+        <a class="btn btn-sand" href="#contato" style="margin-top:28px">Solicitar proposta</a>
+      </div>
+    </div>
+    <p class="note">O PAC é um programa educacional de promoção de saúde mental. Pode integrar as ações do escritório nessas frentes, mas não substitui a avaliação técnica de segurança e saúde no trabalho exigida pela NR-1, nem acompanhamento psicológico ou médico.</p>
+  </div>
+</section>
+
+<!-- 9. PRODUTOS (escalável) -->
+<section id="produtos" class="wrap sec">
+  <span class="eyebrow">Produtos e formatos</span>
+  <h2 class="h2">Escolha por onde começar</h2>
+  <div class="prod-grid">
+    <article class="prod">
+      <div class="top type">PAC in-company</div>
+      <div class="body"><small>Escritórios</small><h3>Programa para equipes</h3><p>O protocolo completo aplicado a sócios, advogados e equipe de apoio, com avaliação no início e no fim.</p><a class="btn btn-black" href="#contato">Solicitar proposta</a></div>
+    </article>
+    <article class="prod">
+      <div class="top photo"><img src="aline-mentoria-pb.jpg" alt="Aline Vidanes em sessão online" width="1600" height="1067"></div>
+      <div class="body"><small>Individual</small><h3>Mentoria e turmas abertas</h3><p>Para advogados e advogadas que querem aplicar o protocolo individualmente, com acompanhamento online.</p><a class="btn btn-line" href="#contato">Entrar na lista</a></div>
+    </article>
+    <article class="prod">
+      <div class="top"><img src="livro-capa.jpg" alt="Capa do livro Advocacia Consciente" width="539" height="794"></div>
+      <div class="body"><small>Livro</small><h3>Advocacia Consciente</h3><p>A base do método, com práticas aplicadas e referências científicas. Freitas Bastos Editora.</p><a class="btn btn-line" href="#livro">Ver o livro</a></div>
+    </article>
+    <article class="prod">
+      <div class="top type">Palestras</div>
+      <div class="body"><small>Eventos</small><h3>Palestras e workshops</h3><p>Para seccionais e comissões da OAB, eventos jurídicos, faculdades e escritórios.</p><a class="btn btn-line" href="#contato">Convidar</a></div>
+    </article>
+    <article class="prod">
+      <div class="top photo"><img src="https://images.pexels.com/photos/14715851/pexels-photo-14715851.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Mesa de trabalho com computador junto à janela, com luz natural" width="900" height="600" loading="lazy"></div>
+      <div class="body"><span class="badge-soon">Em breve</span><h3>PAC online, no seu ritmo</h3><p>O protocolo em formato de curso, com videoaulas e práticas guiadas.</p><a class="btn btn-line" href="#contato">Avisar quando abrir</a></div>
+    </article>
+    <article class="prod">
+      <div class="top type">Autoavaliação</div>
+      <div class="body"><small>Comece agora</small><h3>Autoavaliação</h3><p>A Escala de Estresse Percebido (PSS-10), com resultado na hora e uma prática guiada por e-mail.</p><a class="btn btn-line" href="#autoavaliacao">Fazer agora</a></div>
+    </article>
+  </div>
+</section>
+
+<!-- 10. CIÊNCIA (autoridade) -->
+<section class="sec" style="background:#FAF8F5;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap sci">
+    <div>
+      <span class="eyebrow">Base científica</span>
+      <h2 class="h2">Mindfulness aqui é treino de atenção. <em>Não é prática religiosa.</em></h2>
+      <p class="lead">O PAC usa ferramentas laicas, descritas na literatura científica e ensinadas como habilidades práticas.</p>
+    </div>
+    <div>
+      <ul class="sci-list">
+        <li><b>MBSR — Redução de Estresse Baseada em Mindfulness</b><span>Programa de 8 semanas criado por Jon Kabat-Zinn na Faculdade de Medicina da Universidade de Massachusetts, com décadas de ensaios clínicos e revisões sistemáticas. O PAC é inspirado nele e adaptado à advocacia.</span></li>
+        <li><b>Neurociência do comportamento</b><span>Como o estresse afeta atenção, memória e decisão — e como a prática regular se relaciona com a regulação emocional.</span></li>
+        <li><b>Psicologia do trabalho</b><span>Autonomia de decisão e suporte entre colegas como fatores de estresse ou proteção, inclusive entre advogados brasileiros (Costa &amp; Ferreira, 2014).</span></li>
+      </ul>
+      <details>
+        <summary>Referências</summary>
+        <ol>
+          <li>Cohen, S.; Kamarck, T.; Mermelstein, R. (1983). A global measure of perceived stress. <em>Journal of Health and Social Behavior</em>, 24(4), 385–396.</li>
+          <li>Kabat-Zinn, J. (1990). <em>Full Catastrophe Living</em>. New York: Delta.</li>
+          <li>Kabat-Zinn, J. (2003). Mindfulness-based interventions in context: past, present, and future. <em>Clinical Psychology: Science and Practice</em>.</li>
+          <li>García Campayo, J.; Demarzo, M. (2018). <em>¿Qué sabemos del mindfulness?</em> Kairós.</li>
+          <li>Cosenza, R. M. (2021). <em>Neurociência e mindfulness</em>. Artmed.</li>
+          <li>Costa, M. F. A. A.; Ferreira, M. C. (2014). Sources and Reactions to Stress in Brazilian Lawyers. <em>Paidéia</em>, 24(57), 49–56.</li>
+          <li>Goh, J.; Pfeffer, J.; Zenios, S. A. (2015). Workplace stressors &amp; health outcomes. <em>Behavioral Science &amp; Policy</em>, 1(1), 43–52.</li>
+          <li>Allen, J. G.; Romate, J.; Rajkumar, E. (2021). Mindfulness-based positive psychology interventions: a systematic review. <em>BMC Psychology</em>, 9.</li>
+        </ol>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 11. LIVRO -->
+<section id="livro" class="wrap sec">
+  <div class="book">
+    <picture>
+      <source srcset="livro-capa.webp" type="image/webp">
+      <img class="cover" src="livro-capa.jpg" alt="Capa do livro Advocacia Consciente, Saúde Mental e Bem-Estar para Advogados, de Aline Vidanes" width="539" height="794">
+    </picture>
+    <div>
+      <span class="eyebrow">O livro</span>
+      <h2 class="h2">Advocacia Consciente, Saúde Mental e Bem-Estar para Advogados</h2>
+      <p class="lead">Estresse, burnout, inteligência emocional, relações de trabalho e liderança na advocacia, com dez práticas aplicadas e referências científicas. Inclui texto da Deputada Maria Arraes, autora da Lei nº 14.831/2024.</p>
+      <blockquote>“Não se trata de abdicar da excelência, mas de transformá-la: uma advocacia mais consciente é uma advocacia mais potente.”</blockquote>
+      <p class="meta">Freitas Bastos Editora · Impresso e e-book · ISBN 978-65-5675-530-4</p>
+      <div class="ctas">
+        <a class="btn btn-black" href="https://www.freitasbastos.com.br/advocacia-consciente--saude-mental-e-bem-estar-para-advogados-61745399" target="_blank" rel="noopener">Comprar na editora</a>
+        <a class="btn btn-line" href="https://www.amazon.com.br/Advocacia-Consciente-Mental-Bem-Estar-Advogados/dp/6556755303" target="_blank" rel="noopener">Ver na Amazon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTIGOS -->
+<section id="artigos" class="wrap sec">
+  <span class="eyebrow">Artigos</span>
+  <h2 class="h2">Reflexões sobre saúde mental <em>e advocacia</em></h2>
+  <p class="lead">Textos de Aline Vidanes publicados no LinkedIn.</p>
+  <ul class="art-list">
+<li><a href="https://www.linkedin.com/pulse/urg%C3%AAncia-da-sa%C3%BAde-mental-na-advocacia-aline-vidanes-lwlce" target="_blank" rel="noopener"><h3>A urgência da saúde mental na advocacia</h3><p>Reflexões a partir de uma reportagem do jornal espanhol El Confidencial sobre a saúde mental dos profissionais do Direito.</p><span>Ler no LinkedIn →</span></a></li>
+<li><a href="https://www.linkedin.com/pulse/lideran%C3%A7a-consciente-transformando-o-estresse-em-na-aline-vidanes-kbyue" target="_blank" rel="noopener"><h3>Liderança consciente: transformando o estresse em inspiração</h3><p>Como a forma de o líder lidar com a pressão afeta toda a equipe do escritório.</p><span>Ler no LinkedIn →</span></a></li>
+<li><a href="https://www.linkedin.com/pulse/mindfulness-e-advocacia-3-benef%C3%ADcios-transformadores-para-vidanes-m59ee" target="_blank" rel="noopener"><h3>Mindfulness e advocacia: 3 benefícios para a prática jurídica</h3><p>O que a atenção plena pode mudar no dia a dia de quem advoga.</p><span>Ler no LinkedIn →</span></a></li>
+<li><a href="https://www.linkedin.com/pulse/import%C3%A2ncia-da-compaix%C3%A3o-ambiente-de-trabalho-aline-vidanes" target="_blank" rel="noopener"><h3>Reflexões sobre a compaixão no ambiente de trabalho</h3><p>A partir de um artigo da Harvard Business Review, o papel da compaixão nas relações profissionais.</p><span>Ler no LinkedIn →</span></a></li>
+<li><a href="https://www.linkedin.com/pulse/import%C3%A2ncia-da-sa%C3%BAde-mental-ambiente-de-trabalho-aline-vidanes" target="_blank" rel="noopener"><h3>A importância da saúde mental no ambiente de trabalho</h3><p>Por que cuidar da saúde mental da equipe é também uma decisão de gestão.</p><span>Ler no LinkedIn →</span></a></li>
+  </ul>
+</section>
+
+<!-- 12. FAQ (objeções) -->
+<section class="sec" style="background:#FAF8F5;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Perguntas frequentes</span>
+    <h2 class="h2">Antes de decidir</h2>
+    <div class="faq">
+      <details><summary>O PAC tem alguma relação com religião ou espiritualidade?</summary><p>Não. O programa usa mindfulness como treino de atenção, na linha das intervenções estudadas pela ciência, junto com neurociência do comportamento e psicologia do trabalho. As práticas são laicas.</p></details>
+      <details><summary>Preciso ter experiência com meditação?</summary><p>Não. O protocolo parte do zero. A recomendação é reservar cerca de 30 minutos por dia para a prática, além de um encontro semanal ao vivo. Parte da prática é informal, feita durante atividades que você já realiza no dia a dia.</p></details>
+      <details><summary>Funciona online?</summary><p>Sim. O programa pode ser aplicado presencialmente ou online, inclusive para equipes em diferentes cidades e países.</p></details>
+      <details><summary>Como sabemos se houve mudança?</summary><p>No início e no fim, cada participante responde à Escala de Estresse Percebido (PSS-10). A comparação mostra a mudança no nível de estresse percebido ao longo das seis semanas. Ao longo do programa, diários de prática ajudam a registrar as mudanças no dia a dia.</p></details>
+      <details><summary>O PAC substitui terapia ou acompanhamento médico?</summary><p>Não. É um programa educacional de promoção de saúde mental. Em caso de sofrimento intenso, o caminho é buscar um profissional de saúde.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 13. CONTATO -->
+<section id="contato" class="contact dark sec">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Vamos conversar</span>
+      <h2 class="h2">O primeiro passo é <em>uma conversa.</em></h2>
+      <p class="lead">Conte o que o escritório ou você procura. Retorno por e-mail, com uma proposta pensada para a sua realidade.</p>
+      <ul class="contact-list">
+        <li>E-mail: <a href="mailto:aline@alinevidanes.com">aline@alinevidanes.com</a></li>
+        <li>WhatsApp: <a href="#" data-wa>enviar mensagem</a></li>
+      </ul>
+    </div>
+    <form class="f" name="proposta" method="POST" action="https://formsubmit.co/aline@alinevidanes.com">
+      <input type="hidden" name="_subject" value="Novo pedido de proposta — Advocacia Consciente">
+      <input type="hidden" name="_next" value="https://advocaciaconsciente.com/obrigado.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="row2">
+        <div><label for="p-nome">Nome</label><input id="p-nome" name="nome" autocomplete="name" required></div>
+        <div><label for="p-email">E-mail</label><input id="p-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="row2">
+        <div><label for="p-org">Escritório ou instituição</label><input id="p-org" name="organizacao" autocomplete="organization"></div>
+        <div><label for="p-tam">Tamanho da equipe</label>
+          <select id="p-tam" name="equipe"><option>Individual</option><option>Até 10 pessoas</option><option>11 a 50 pessoas</option><option>Mais de 50 pessoas</option></select></div>
+      </div>
+      <label for="p-int">Interesse</label>
+      <select id="p-int" name="interesse"><option>PAC in-company para o escritório</option><option>Palestra ou workshop</option><option>Mentoria individual</option><option>Turmas abertas / curso online</option><option>Outro</option></select>
+      <label for="p-msg">Mensagem</label>
+      <textarea id="p-msg" name="mensagem"></textarea>
+      <label class="consent"><input type="checkbox" name="consentimento" required><span>Li a <a href="politica-de-privacidade.html" style="color:var(--sand)">Política de Privacidade</a> e concordo em receber o retorno e comunicações da Advocacia Consciente.</span></label>
+      <button class="btn btn-sand" type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#inicio"><b>Advocacia Consciente</b><small style="color:#857C70">Programa PAC®</small></a>
+      <p style="margin-top:16px;max-width:380px">PAC — Programa Advocacia Consciente® é um programa educacional criado por Aline Vidanes. Não substitui acompanhamento psicológico ou médico.</p>
+    </div>
+    <nav aria-label="Contato">
+      <a href="mailto:aline@alinevidanes.com">aline@alinevidanes.com</a>
+      <a href="#" data-wa>WhatsApp</a>
+      <a href="https://www.instagram.com/aline.vidanes/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/alinevidanes/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <nav aria-label="Advocacia">
+      <span style="color:var(--ivory)">Advocacia de família</span>
+      <a href="https://alinevidanes.com" target="_blank" rel="noopener">alinevidanes.com →</a>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <span>© <span id="ano">2026</span> Advocacia Consciente · Aline Vidanes</span>
+    <a href="politica-de-privacidade.html">Política de Privacidade</a>
+  </div>
+</footer>
+
+<a class="wa" href="#" data-wa aria-label="Conversar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+  <span>Fale comigo</span>
+</a>
+
+<script>
+var WHATSAPP="32471634305", MSG="Olá, Aline! Vim pelo site Advocacia Consciente.";
+document.querySelectorAll('[data-wa]').forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(MSG);a.target="_blank";a.rel="noopener";});
+var b=document.querySelector('.burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded',false);});});
+document.getElementById('ano').textContent=new Date().getFullYear();
+
+// Autoavaliação — Escala de Estresse Percebido (PSS-10; Cohen, Kamarck & Mermelstein, 1983). Educativa, não diagnóstica.
+var ITENS=[
+ {t:"Com que frequência você ficou aborrecido(a) por causa de algo que aconteceu inesperadamente?"},
+ {t:"Com que frequência você sentiu que foi incapaz de controlar coisas importantes na sua vida?"},
+ {t:"Com que frequência você esteve nervoso(a) ou estressado(a)?"},
+ {t:"Com que frequência você esteve confiante em sua capacidade de lidar com seus problemas pessoais?",inv:1},
+ {t:"Com que frequência você sentiu que as coisas aconteceram da maneira que você esperava?",inv:1},
+ {t:"Com que frequência você achou que não conseguiria lidar com todas as coisas que tinha por fazer?"},
+ {t:"Com que frequência você foi capaz de controlar irritações na sua vida?",inv:1},
+ {t:"Com que frequência você sentiu que todos os aspectos de sua vida estavam sob controle?",inv:1},
+ {t:"Com que frequência você esteve bravo(a) por causa de coisas que estiveram fora de seu controle?"},
+ {t:"Com que frequência você sentiu que os problemas acumularam tanto que você não conseguiria resolvê-los?"}];
+var OPC=["Nunca","Quase nunca","Algumas vezes","Com frequência","Muitas vezes"];
+var qs=document.getElementById('qs');
+ITENS.forEach(function(it,i){
+  var d=document.createElement('div');d.className='q';
+  var html='<fieldset><legend>'+(i+1)+'. '+it.t+'</legend><div class="opts">';
+  OPC.forEach(function(o,v){html+='<label><input type="radio" name="q'+i+'" value="'+v+'"><span>'+o+'</span></label>';});
+  d.innerHTML=html+'</div></fieldset>';qs.appendChild(d);
+});
+document.getElementById('calc').addEventListener('click',function(){
+  var s=0,miss=0;
+  for(var i=0;i<ITENS.length;i++){var c=document.querySelector('input[name=q'+i+']:checked');if(!c){miss++;continue;}var v=+c.value;s+=ITENS[i].inv?4-v:v;}
+  var err=document.getElementById('qerr');
+  if(miss){err.textContent='Responda todas as perguntas para ver o resultado.';return;}
+  err.textContent='';
+  var t,d;
+  if(s<=13){t='Estresse percebido baixo';d='Sua pontuação está na faixa baixa. Um bom momento para fortalecer hábitos de proteção — pausas de atenção e limites claros — antes que a pressão aumente.';}
+  else if(s<=26){t='Estresse percebido moderado';d='Sua pontuação está na faixa moderada. Situações do dia a dia têm sido percebidas como imprevisíveis ou sobrecarregantes com alguma frequência. Práticas estruturadas de atenção e gestão do estresse podem ajudar a reorganizar a rotina.';}
+  else{t='Estresse percebido alto';d='Sua pontuação está na faixa alta. Vale olhar para isso com cuidado — e, se houver sofrimento intenso, conversar com um profissional de saúde. Um programa estruturado pode complementar esse cuidado.';}
+  document.getElementById('rt').textContent=t+' · '+s+' de 40 pontos';
+  document.getElementById('rd').textContent=d;
+  document.getElementById('score-field').value=s+'/40 — '+t;
+  var r=document.getElementById('result');r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'center'});
+});
+</script>
+</body>
+</html>
