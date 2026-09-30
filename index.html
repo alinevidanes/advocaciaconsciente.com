@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Advocacia Consciente | Saúde mental na advocacia, com método científico</title>
-<meta name="description" content="PAC — Programa Advocacia Consciente®: protocolo de 6 semanas baseado em mindfulness e neurociência, com avaliação antes e depois, para escritórios de advocacia e profissionais do Direito. Criado pela advogada Aline Vidanes.">
+<title>Saúde mental na advocacia | Programa Advocacia Consciente</title>
+<meta name="description" content="Programa Advocacia Consciente®: 6 semanas, inspirado no MBSR, para advogados e escritórios reduzirem o estresse. Palestras, NR-1 e autoavaliação.">
 <link rel="canonical" href="https://advocaciaconsciente.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -17,248 +17,113 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --black:#141312; --black-2:#1E1C1A; --sand:#D8C7AE; --sand-2:#F3EEE6; --sand-3:#E4D7C3;
-  --ivory:#FFFFFF; --white:#FFFFFF; --line:#E2D8C8; --line-dark:#34302C;
-  --ink:#141312; --ink-2:#3D3934; --muted:#6F665C; --bronze:#7A5C3A;
-  --display:'Newsreader',Georgia,serif; --sans:'Jost',system-ui,-apple-system,sans-serif;
-  --pad:clamp(20px,6vw,96px);
+<link rel="stylesheet" href="/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://advocaciaconsciente.com/#website",
+   "url": "https://advocaciaconsciente.com/",
+   "name": "Advocacia Consciente",
+   "inLanguage": "pt-BR",
+   "publisher": {
+    "@id": "https://advocaciaconsciente.com/#org"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://advocaciaconsciente.com/#org",
+   "name": "Advocacia Consciente",
+   "url": "https://advocaciaconsciente.com/",
+   "logo": "https://advocaciaconsciente.com/favicon.svg",
+   "email": "aline@alinevidanes.com",
+   "founder": {
+    "@type": "Person",
+    "@id": "https://alinevidanes.com/#aline",
+    "name": "Aline Vidanes",
+    "jobTitle": "Advogada e instrutora de mindfulness",
+    "url": "https://alinevidanes.com/",
+    "sameAs": [
+     "https://www.linkedin.com/in/alinevidanes/",
+     "https://www.instagram.com/aline.vidanes/"
+    ]
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/alinevidanes/"
+   ]
+  },
+  {
+   "@type": "Course",
+   "name": "Programa Advocacia Consciente® (PAC)",
+   "url": "https://advocaciaconsciente.com/programa-pac/",
+   "description": "Programa de 6 semanas de mindfulness e gestão do estresse para advogados, inspirado no MBSR, com medição do estresse percebido (PSS-10) no início e no fim.",
+   "provider": {
+    "@id": "https://advocaciaconsciente.com/#org"
+   },
+   "inLanguage": "pt-BR"
+  },
+  {
+   "@type": "Book",
+   "name": "Advocacia Consciente: Saúde Mental e Bem-Estar para Advogados",
+   "author": {
+    "@id": "https://alinevidanes.com/#aline"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Freitas Bastos Editora"
+   },
+   "image": "https://advocaciaconsciente.com/livro-capa.jpg"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "O PAC tem alguma relação com religião ou espiritualidade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Não. O programa usa mindfulness como treino de atenção, na linha das intervenções estudadas pela ciência, junto com neurociência do comportamento e psicologia do trabalho. As práticas são laicas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Preciso ter experiência com meditação?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Não. O protocolo parte do zero. A recomendação é reservar cerca de 30 minutos por dia para a prática, além de um encontro semanal ao vivo. Parte da prática é informal, feita durante atividades que você já realiza no dia a dia."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Funciona online?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. O programa pode ser aplicado presencialmente ou online, inclusive para equipes em diferentes cidades e países."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Como sabemos se houve mudança?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No início e no fim, cada participante responde à Escala de Estresse Percebido (PSS-10). A comparação mostra a mudança no nível de estresse percebido ao longo das seis semanas. Ao longo do programa, diários de prática ajudam a registrar as mudanças no dia a dia."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O PAC substitui terapia ou acompanhamento médico?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Não. É um programa educacional de promoção de saúde mental. Em caso de sofrimento intenso, o caminho é buscar um profissional de saúde."
+     }
+    }
+   ]
+  }
+ ]
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:17.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
-main{overflow-x:clip}
-img{max-width:100%;height:auto;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--display);font-weight:500;margin:0;line-height:1.12}
-p{margin:0}
-.wrap{max-width:1320px;margin:0 auto;padding:0 var(--pad)}
-.eyebrow{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze);font-weight:500}
-.dark .eyebrow{color:var(--sand)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:14px 32px;font-family:var(--sans);font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;text-decoration:none;border:1px solid var(--black);transition:background .25s,color .25s;cursor:pointer;text-align:center}
-.btn-black{background:var(--black);color:var(--ivory)}
-.btn-black:hover{background:var(--bronze);border-color:var(--bronze)}
-.btn-line{background:transparent;color:var(--black)}
-.btn-line:hover{background:var(--black);color:var(--ivory)}
-.btn-sand{background:var(--sand);border-color:var(--sand);color:var(--black)}
-.btn-sand:hover{background:var(--ivory);border-color:var(--ivory)}
-.sec{padding-top:clamp(80px,10vw,136px);padding-bottom:clamp(80px,10vw,136px)}
-.h2{font-size:clamp(36px,4.4vw,60px);margin:18px 0 22px;letter-spacing:-.01em}
-.h2 em{font-style:italic;color:var(--bronze)}
-.dark .h2 em{color:var(--sand)}
-.lead{font-size:clamp(17.5px,1.4vw,19.5px);color:var(--ink-2);max-width:720px}
-.dark{background:var(--black);color:var(--ivory)}
-.dark .lead{color:#CFC6B8}
-.center{text-align:center;margin-left:auto;margin-right:auto}
-
-/* header */
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav{height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
-.logo b{font-family:var(--display);font-weight:400;font-size:24px;letter-spacing:.02em}
-.logo small{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-.menu{display:flex;align-items:center;gap:30px;font-size:15px}
-.menu a{text-decoration:none}
-.menu a:not(.btn):hover{color:var(--bronze)}
-.menu .btn{min-height:44px;padding:10px 20px;font-size:12.5px}
-.burger{display:none;background:none;border:0;width:48px;height:48px;padding:12px;cursor:pointer;color:var(--black)}
-
-/* hero */
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,96px);align-items:center;padding-top:clamp(40px,6vw,88px);padding-bottom:clamp(56px,7vw,104px)}
-.hero h1{font-size:clamp(48px,6.2vw,92px);letter-spacing:-.015em;margin:26px 0 28px}
-.hero h1 em{font-style:italic;color:var(--bronze)}
-.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
-.hero .micro{font-size:14px;color:var(--muted);margin-top:14px}
-.hero-img{position:relative}
-.hero-img:before{content:"";position:absolute;inset:28px -28px -28px 28px;background:var(--sand-2);z-index:-1}
-.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
-.sign{position:absolute;left:-36px;bottom:-28px;background:var(--black);color:var(--ivory);padding:18px 24px;max-width:300px}
-.sign b{font-family:var(--display);font-weight:400;font-size:21px;display:block}
-.sign span{font-size:13px;color:#CFC6B8;letter-spacing:.02em}
-
-/* trust */
-.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white)}
-.trust .wrap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;padding-top:30px;padding-bottom:30px}
-.trust div{font-size:13.5px;color:var(--muted);line-height:1.5;border-left:1px solid var(--line);padding-left:18px}
-.trust b{display:block;font-family:var(--display);font-weight:400;font-size:19px;color:var(--ink);margin-bottom:2px}
-
-/* dor */
-.pain{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px)}
-.pain ul{list-style:none;padding:0;margin:0}
-.pain li{padding:18px 0;border-top:1px solid var(--line);font-size:17px;color:var(--ink-2);display:flex;gap:16px}
-.pain li:last-child{border-bottom:1px solid var(--line)}
-.pain li span{font-family:var(--display);color:var(--bronze);font-size:20px;line-height:1.3;min-width:28px}
-.pullquote{font-family:var(--display);font-style:italic;font-size:clamp(24px,2.4vw,32px);line-height:1.35;margin-top:28px;color:var(--ink)}
-
-/* virada */
-.shift{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:56px}
-.shift div{background:var(--black);padding:36px}
-.shift h3{font-size:26px;margin-bottom:16px}
-.shift ul{margin:0;padding-left:18px;color:#CFC6B8;font-size:16px}
-.shift li{margin-bottom:8px}
-.shift .after h3{color:var(--sand)}
-
-/* história */
-.story{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,7vw,112px);align-items:center}
-.story img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
-.story p{color:var(--ink-2);margin-bottom:16px}
-.story .sig{font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink);margin-top:8px}
-
-/* protocolo */
-.timeline{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));margin-top:56px;border-top:1px solid var(--black)}
-.tl{padding:18px 14px 0 0;position:relative}
-.tl:before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;background:var(--black);border-radius:50%}
-.tl.m:before{background:var(--bronze);width:11px;height:11px;top:-6px}
-.tl small{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-.tl b{display:block;font-family:var(--display);font-weight:400;font-size:18px;line-height:1.25;margin-top:4px}
-.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:72px}
-.pillar{border-top:1px solid var(--line);padding-top:24px}
-.pillar em{font-family:var(--display);font-size:44px;color:var(--sand);font-style:italic;line-height:1}
-.pillar h3{font-size:28px;margin:12px 0 10px}
-.pillar p{color:var(--ink-2);font-size:16px}
-.tools{margin-top:72px;background:#FAF8F5;border:1px solid var(--line);padding:clamp(28px,4vw,48px)}
-.tools h3{font-size:28px;margin-bottom:6px}
-.tools p{color:var(--ink-2);font-size:15.5px}
-.tools ul{columns:2;column-gap:48px;margin:22px 0 0;padding:0;list-style:none}
-.tools li{break-inside:avoid;padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
-
-/* autoavaliação */
-.quiz{background:#FAF8F5;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.quiz .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,6vw,96px);align-items:start}
-.qbox{background:var(--white);padding:clamp(24px,3.5vw,44px);border:1px solid var(--line)}
-.q{padding:18px 0;border-bottom:1px solid var(--line)}
-.q legend{font-size:16.5px;font-weight:500;margin-bottom:10px;padding:0}
-.q fieldset{border:0;margin:0;padding:0}
-.opts{display:flex;flex-wrap:wrap;gap:8px}
-.opts label{cursor:pointer}
-.opts input{position:absolute;opacity:0;pointer-events:none}
-.opts span{display:inline-block;padding:9px 14px;border:1px solid var(--line);font-size:14px;color:var(--ink-2);min-height:44px;line-height:24px}
-.opts input:checked+span{background:var(--black);color:var(--ivory);border-color:var(--black)}
-.opts input:focus-visible+span{outline:2px solid var(--bronze);outline-offset:2px}
-.result{display:none;margin-top:24px;padding:26px;background:var(--black);color:var(--ivory)}
-.result.show{display:block}
-.result h3{font-size:28px;color:var(--sand);margin-bottom:10px}
-.result p{color:#CFC6B8;font-size:16px;margin-bottom:10px}
-.disc{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.55}
-
-/* escritórios */
-.office{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px)}
-.reg{border-top:1px solid var(--line-dark);padding:22px 0}
-.reg small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
-.reg h3{font-size:24px;margin:8px 0}
-.reg p{color:#CFC6B8;font-size:16px}
-.diff{list-style:none;padding:0;margin:0}
-.diff li{padding:20px 0;border-top:1px solid var(--line-dark)}
-.diff b{display:block;font-family:var(--display);font-weight:400;font-size:22px;color:var(--ivory);margin-bottom:4px}
-.diff span{color:#CFC6B8;font-size:16px}
-.note{font-size:13px;color:#9A9083;margin-top:40px;max-width:900px}
-
-/* produtos */
-.prod-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:56px}
-.prod{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column}
-.prod .top{background:#F6F2EC;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.prod .top img{height:84%;width:auto;box-shadow:12px 16px 30px rgba(20,19,18,.25)}
-.prod .top.photo img{height:100%;width:100%;object-fit:cover;box-shadow:none}
-.prod .top.type{background:var(--black);color:var(--sand);font-family:var(--display);font-size:30px;font-style:italic}
-.prod .body{padding:28px;display:flex;flex-direction:column;gap:10px;flex-grow:1}
-.prod small{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--bronze)}
-.prod h3{font-size:26px}
-.prod p{color:var(--ink-2);font-size:15.5px}
-.prod .btn{margin-top:auto;align-self:flex-start;min-height:46px;padding:10px 20px;font-size:12.5px}
-.badge-soon{align-self:flex-start;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line);padding:4px 10px;color:var(--muted)}
-
-/* ciência */
-.sci{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,96px);align-items:start}
-.sci-list{list-style:none;padding:0;margin:0}
-.sci-list li{padding:22px 0;border-top:1px solid var(--line)}
-.sci-list b{display:block;font-family:var(--display);font-weight:400;font-size:24px;margin-bottom:4px}
-.sci-list span{color:var(--ink-2);font-size:16px}
-details{margin-top:28px;border-top:1px solid var(--line);padding-top:18px}
-summary{cursor:pointer;font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
-details ol{font-size:14px;color:var(--muted);line-height:1.6;padding-left:20px;margin-top:16px}
-details li{margin-bottom:8px}
-
-/* livro */
-.book{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(40px,7vw,112px);align-items:center}
-.book .cover{justify-self:center;width:min(320px,70vw);box-shadow:24px 32px 60px rgba(20,19,18,.3)}
-.book blockquote{margin:26px 0;font-family:var(--display);font-style:italic;font-size:clamp(22px,2vw,27px);line-height:1.4;padding-left:22px;border-left:1px solid var(--bronze)}
-.meta{font-size:14px;color:var(--muted);margin-bottom:28px}
-.book .ctas{display:flex;flex-wrap:wrap;gap:14px}
-
-/* faq */
-.faq{max-width:900px}
-.faq details{margin-top:0;padding:22px 0;border-top:1px solid var(--line)}
-.faq details:last-child{border-bottom:1px solid var(--line)}
-.faq summary{font-family:var(--display);font-size:23px;letter-spacing:0;text-transform:none;list-style:none;display:flex;justify-content:space-between;gap:20px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary:after{content:"+";font-family:var(--sans);font-weight:400;color:var(--bronze)}
-.faq details[open] summary:after{content:"–"}
-.faq details p{color:var(--ink-2);margin-top:12px;font-size:16.5px}
-
-/* contato */
-.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,96px)}
-form.f{display:flex;flex-direction:column;gap:10px}
-.f label{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#CFC6B8}
-.f input,.f select,.f textarea{min-height:52px;padding:0 16px;background:transparent;border:1px solid #4A443E;color:var(--ivory);font:inherit;font-size:16px}
-.f select option{color:var(--ink)}
-.f textarea{min-height:120px;padding:14px 16px;resize:vertical}
-.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--sand);outline-offset:1px}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.row2>div{display:flex;flex-direction:column;gap:8px}
-.consent{display:flex;gap:10px;font-size:13px!important;letter-spacing:0!important;text-transform:none!important;line-height:1.5;margin-top:6px}
-.consent input{min-height:18px!important;width:18px;flex-shrink:0;margin-top:2px}
-.hidden{display:none}
-.f .btn{margin-top:10px}
-.contact-list{list-style:none;padding:0;margin:28px 0 0;font-size:16px}
-.contact-list li{padding:10px 0;border-top:1px solid var(--line-dark);color:#CFC6B8}
-.contact-list a{text-decoration:none;color:var(--ivory)}
-
-footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
-.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;padding-top:64px;padding-bottom:40px}
-.foot .logo b{color:var(--ivory)}
-.foot a{text-decoration:none}
-.foot a:hover{color:var(--ivory)}
-.foot nav{display:flex;flex-direction:column;gap:6px}
-.legal{border-top:1px solid #2A2724;padding-top:22px;padding-bottom:30px;font-size:13px;color:#857C70;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
-
-.wa{position:fixed;right:22px;bottom:92px;z-index:60;display:flex;align-items:center;gap:10px;background:#1F7A4D;color:#fff;text-decoration:none;border-radius:999px;padding:13px 18px 13px 15px;box-shadow:0 10px 30px rgba(0,0,0,.2);font-size:14.5px;font-weight:500}
-.wa svg{width:24px;height:24px}
-
-@media (max-width:1080px){
-  .menu{position:fixed;inset:80px 0 auto 0;background:var(--ivory);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--pad) 26px;border-bottom:1px solid var(--line);display:none}
-  .menu.open{display:flex}
-  .menu a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line)}
-  .menu .btn{margin-top:16px}
-  .burger{display:block}
-  .trust .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .timeline{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:28px}
-  .prod-grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width:860px){
-  .hero,.pain,.story,.quiz .wrap,.office,.sci,.book,.contact .wrap,.shift,.pillars{grid-template-columns:1fr}
-  .hero-img{max-width:440px}
-  .sign{left:-10px}
-  .story img{max-width:440px}
-  .tools ul{columns:1}
-}
-@media (max-width:600px){
-  .trust .wrap{grid-template-columns:1fr 1fr}
-  .timeline{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .prod-grid,.row2{grid-template-columns:1fr}
-  .hero .ctas .btn{width:100%}
-  .hero-img:before{inset:16px -12px -16px 16px}
-  .wa span{display:none}.wa{padding:14px}
-}
-@media (max-width:1200px){.sign span{display:none}.sign{padding:14px 20px}}
-.art-list{list-style:none;padding:0;margin:48px 0 0;border-top:1px solid var(--line)}
-.art-list a{display:grid;grid-template-columns:1fr auto;gap:8px 40px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);text-decoration:none}
-.art-list a:hover h3{color:var(--bronze)}
-.art-list h3{font-size:clamp(22px,2vw,28px);transition:color .2s}
-.art-list p{grid-column:1;color:var(--ink-2);font-size:16px}
-.art-list span{grid-row:1/3;grid-column:2;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
-@media (max-width:600px){.art-list a{grid-template-columns:1fr}.art-list span{grid-row:auto;grid-column:1}}
-</style>
+</script>
 </head>
 <body>
 
@@ -269,10 +134,10 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
     </button>
     <nav class="menu" id="menu" aria-label="Principal">
-      <a href="#protocolo">O protocolo</a>
-      <a href="#escritorios">Para escritórios</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#autoavaliacao">Autoavaliação</a>
+      <a href="/programa-pac/">O programa</a>
+      <a href="/nr-1-escritorios-de-advocacia/">NR-1</a>
+      <a href="/palestras/">Palestras</a>
+      <a href="/autoavaliacao-estresse/">Autoavaliação</a>
       <a href="#livro">O livro</a>
       <a href="#artigos">Artigos</a>
       <a class="btn btn-black" href="#contato">Solicitar proposta</a>
@@ -457,7 +322,7 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
     <h2 class="h2">Saúde mental virou tema de gestão. <em>E de conformidade.</em></h2>
     <div class="office">
       <div>
-        <div class="reg"><small>NR-1 · desde 26/05/2026</small><h3>Riscos psicossociais</h3><p>Fatores como estresse, sobrecarga e assédio devem integrar o gerenciamento de riscos ocupacionais das organizações com empregados — incluindo escritórios. O primeiro ano de fiscalização é orientativo.</p></div>
+        <div class="reg"><small>NR-1 · desde 26/05/2026</small><h3>Riscos psicossociais</h3><p>Fatores como estresse, sobrecarga e assédio devem integrar o gerenciamento de riscos ocupacionais das organizações com empregados — incluindo escritórios. Desde 26/05/2026, a fiscalização pode resultar em autuação. <a href="/nr-1-escritorios-de-advocacia/" style="color:var(--sand)">Entenda o que muda →</a></p></div>
         <div class="reg"><small>Lei nº 14.831/2024</small><h3>Certificado Empresa Promotora da Saúde Mental</h3><p>Certificação federal para organizações com ações de promoção da saúde mental, bem-estar dos trabalhadores e transparência.</p></div>
         <div class="reg"><small>Brasil · INSS</small><h3>Afastamentos em alta</h3><p>Em 2024, mais de 472 mil afastamentos do trabalho foram concedidos por transtornos mentais no Brasil — alta de 68% em relação ao ano anterior (Ministério da Previdência Social).</p></div>
         <div class="reg"><small>Evidência</small><h3>O custo dos estressores</h3><p>Revisão de estudos associou alta demanda de trabalho a 35% mais chances de doenças diagnosticadas e jornadas longas a quase 20% mais mortalidade (Goh, Pfeffer &amp; Zenios, 2015).</p></div>
@@ -484,7 +349,7 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
   <div class="prod-grid">
     <article class="prod">
       <div class="top type">PAC in-company</div>
-      <div class="body"><small>Escritórios</small><h3>Programa para equipes</h3><p>O protocolo completo aplicado a sócios, advogados e equipe de apoio, com avaliação no início e no fim.</p><a class="btn btn-black" href="#contato">Solicitar proposta</a></div>
+      <div class="body"><small>Escritórios</small><h3>Programa para equipes</h3><p>O protocolo completo aplicado a sócios, advogados e equipe de apoio, com avaliação no início e no fim. <a href="/programa-pac/">Como funciona o PAC →</a></p><a class="btn btn-black" href="#contato">Solicitar proposta</a></div>
     </article>
     <article class="prod">
       <div class="top photo"><img src="aline-mentoria-pb.jpg" alt="Aline Vidanes em sessão online" width="1600" height="1067"></div>
@@ -496,7 +361,7 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
     </article>
     <article class="prod">
       <div class="top type">Palestras</div>
-      <div class="body"><small>Eventos</small><h3>Palestras e workshops</h3><p>Para seccionais e comissões da OAB, eventos jurídicos, faculdades e escritórios.</p><a class="btn btn-line" href="#contato">Convidar</a></div>
+      <div class="body"><small>Eventos</small><h3>Palestras e workshops</h3><p>Para seccionais e comissões da OAB, eventos jurídicos, faculdades e escritórios. <a href="/palestras/">Ver temas →</a></p><a class="btn btn-line" href="#contato">Convidar</a></div>
     </article>
     <article class="prod">
       <div class="top photo"><img src="https://images.pexels.com/photos/14715851/pexels-photo-14715851.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Mesa de trabalho com computador junto à janela, com luz natural" width="900" height="600" loading="lazy"></div>
@@ -504,7 +369,7 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
     </article>
     <article class="prod">
       <div class="top type">Autoavaliação</div>
-      <div class="body"><small>Comece agora</small><h3>Autoavaliação</h3><p>A Escala de Estresse Percebido (PSS-10), com resultado na hora e uma prática guiada por e-mail.</p><a class="btn btn-line" href="#autoavaliacao">Fazer agora</a></div>
+      <div class="body"><small>Comece agora</small><h3>Autoavaliação</h3><p>A Escala de Estresse Percebido (PSS-10), com resultado na hora e uma prática guiada por e-mail.</p><a class="btn btn-line" href="/autoavaliacao-estresse/">Fazer agora</a></div>
     </article>
   </div>
 </section>
@@ -656,49 +521,7 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
   <span>Fale comigo</span>
 </a>
 
-<script>
-var WHATSAPP="32471634305", MSG="Olá, Aline! Vim pelo site Advocacia Consciente.";
-document.querySelectorAll('[data-wa]').forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(MSG);a.target="_blank";a.rel="noopener";});
-var b=document.querySelector('.burger'),m=document.getElementById('menu');
-b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
-m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded',false);});});
-document.getElementById('ano').textContent=new Date().getFullYear();
-
-// Autoavaliação — Escala de Estresse Percebido (PSS-10; Cohen, Kamarck & Mermelstein, 1983). Educativa, não diagnóstica.
-var ITENS=[
- {t:"Com que frequência você ficou aborrecido(a) por causa de algo que aconteceu inesperadamente?"},
- {t:"Com que frequência você sentiu que foi incapaz de controlar coisas importantes na sua vida?"},
- {t:"Com que frequência você esteve nervoso(a) ou estressado(a)?"},
- {t:"Com que frequência você esteve confiante em sua capacidade de lidar com seus problemas pessoais?",inv:1},
- {t:"Com que frequência você sentiu que as coisas aconteceram da maneira que você esperava?",inv:1},
- {t:"Com que frequência você achou que não conseguiria lidar com todas as coisas que tinha por fazer?"},
- {t:"Com que frequência você foi capaz de controlar irritações na sua vida?",inv:1},
- {t:"Com que frequência você sentiu que todos os aspectos de sua vida estavam sob controle?",inv:1},
- {t:"Com que frequência você esteve bravo(a) por causa de coisas que estiveram fora de seu controle?"},
- {t:"Com que frequência você sentiu que os problemas acumularam tanto que você não conseguiria resolvê-los?"}];
-var OPC=["Nunca","Quase nunca","Algumas vezes","Com frequência","Muitas vezes"];
-var qs=document.getElementById('qs');
-ITENS.forEach(function(it,i){
-  var d=document.createElement('div');d.className='q';
-  var html='<fieldset><legend>'+(i+1)+'. '+it.t+'</legend><div class="opts">';
-  OPC.forEach(function(o,v){html+='<label><input type="radio" name="q'+i+'" value="'+v+'"><span>'+o+'</span></label>';});
-  d.innerHTML=html+'</div></fieldset>';qs.appendChild(d);
-});
-document.getElementById('calc').addEventListener('click',function(){
-  var s=0,miss=0;
-  for(var i=0;i<ITENS.length;i++){var c=document.querySelector('input[name=q'+i+']:checked');if(!c){miss++;continue;}var v=+c.value;s+=ITENS[i].inv?4-v:v;}
-  var err=document.getElementById('qerr');
-  if(miss){err.textContent='Responda todas as perguntas para ver o resultado.';return;}
-  err.textContent='';
-  var t,d;
-  if(s<=13){t='Estresse percebido baixo';d='Sua pontuação está na faixa baixa. Um bom momento para fortalecer hábitos de proteção — pausas de atenção e limites claros — antes que a pressão aumente.';}
-  else if(s<=26){t='Estresse percebido moderado';d='Sua pontuação está na faixa moderada. Situações do dia a dia têm sido percebidas como imprevisíveis ou sobrecarregantes com alguma frequência. Práticas estruturadas de atenção e gestão do estresse podem ajudar a reorganizar a rotina.';}
-  else{t='Estresse percebido alto';d='Sua pontuação está na faixa alta. Vale olhar para isso com cuidado — e, se houver sofrimento intenso, conversar com um profissional de saúde. Um programa estruturado pode complementar esse cuidado.';}
-  document.getElementById('rt').textContent=t+' · '+s+' de 40 pontos';
-  document.getElementById('rd').textContent=d;
-  document.getElementById('score-field').value=s+'/40 — '+t;
-  var r=document.getElementById('result');r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'center'});
-});
-</script>
+<script src="/site.js"></script>
+<script src="/quiz.js"></script>
 </body>
 </html>
