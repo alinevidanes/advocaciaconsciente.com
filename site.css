@@ -290,3 +290,4 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
 .quiz-solo .wrap{display:block;max-width:900px}
 @media (max-width:760px){.related-grid{grid-template-columns:1fr}.author{flex-direction:column}.weeks li{grid-template-columns:1fr;gap:4px}}
 .author picture{flex:none;width:92px;height:92px;display:block}.author img{width:92px;height:92px;object-position:50% 15%}
+.prod .top.photo img{filter:grayscale(1) sepia(.12) contrast(1.02)}
