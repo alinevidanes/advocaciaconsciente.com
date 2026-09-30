@@ -1,4 +1,4 @@
-// Autoavaliação — Escala de Estresse Percebido (PSS-10; Cohen, Kamarck & Mermelstein, 1983). Educativa, não diagnóstica.
+// Autoavaliação: Escala de Estresse Percebido (PSS-10; Cohen, Kamarck & Mermelstein, 1983). Educativa, não diagnóstica.
 var ITENS=[
  {t:"Com que frequência você ficou aborrecido(a) por causa de algo que aconteceu inesperadamente?"},
  {t:"Com que frequência você sentiu que foi incapaz de controlar coisas importantes na sua vida?"},
@@ -25,11 +25,11 @@ document.getElementById('calc').addEventListener('click',function(){
   if(miss){err.textContent='Responda todas as perguntas para ver o resultado.';return;}
   err.textContent='';
   var t,d;
-  if(s<=13){t='Estresse percebido baixo';d='Sua pontuação está na faixa baixa. Um bom momento para fortalecer hábitos de proteção — pausas de atenção e limites claros — antes que a pressão aumente.';}
+  if(s<=13){t='Estresse percebido baixo';d='Sua pontuação está na faixa baixa. Um bom momento para fortalecer hábitos de proteção, pausas de atenção e limites claros, antes que a pressão aumente.';}
   else if(s<=26){t='Estresse percebido moderado';d='Sua pontuação está na faixa moderada. Situações do dia a dia têm sido percebidas como imprevisíveis ou sobrecarregantes com alguma frequência. Práticas estruturadas de atenção e gestão do estresse podem ajudar a reorganizar a rotina.';}
-  else{t='Estresse percebido alto';d='Sua pontuação está na faixa alta. Vale olhar para isso com cuidado — e, se houver sofrimento intenso, conversar com um profissional de saúde. Um programa estruturado pode complementar esse cuidado.';}
+  else{t='Estresse percebido alto';d='Sua pontuação está na faixa alta. Vale olhar para isso com cuidado e, se houver sofrimento intenso, conversar com um profissional de saúde. Um programa estruturado pode complementar esse cuidado.';}
   document.getElementById('rt').textContent=t+' · '+s+' de 40 pontos';
   document.getElementById('rd').textContent=d;
-  document.getElementById('score-field').value=s+'/40 — '+t;
+  document.getElementById('score-field').value=s+'/40 | '+t;
   var r=document.getElementById('result');r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'center'});
 });
