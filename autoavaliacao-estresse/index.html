@@ -14,9 +14,7 @@
 <meta property="og:image" content="https://advocaciaconsciente.com/og.jpg">
 <meta name="theme-color" content="#141312">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fonts.css">
 <link rel="stylesheet" href="/site.css">
 <script type="application/ld+json">
 {
@@ -136,18 +134,18 @@
         <h3 id="rt"></h3>
         <p id="rd"></p>
         <p>Quer receber a prática <em>Respiração de 3 minutos para advogados</em> e avisos das próximas turmas?</p>
-        <form class="f" name="pratica-guiada" method="POST" action="https://formsubmit.co/aline@alinevidanes.com" style="margin-top:14px">
-      <input type="hidden" name="_subject" value="Novo pedido da prática guiada | Advocacia Consciente">
-      <input type="hidden" name="_next" value="https://advocaciaconsciente.com/obrigado.html">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <form class="f" name="pratica-guiada" method="POST" action="https://api.web3forms.com/submit" style="margin-top:14px" data-w3f>
+      <input type="hidden" name="access_key" value="25faf4db-9119-431e-aba3-1f1d947e77f1">
+      <input type="hidden" name="subject" value="Inscrição prática de respiração | advocaciaconsciente.com (página do teste)">
+      <input type="hidden" name="from_name" value="Advocacia Consciente">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
           <div class="row2">
             <div><label for="a-nome">Nome</label><input id="a-nome" name="nome" autocomplete="name" required></div>
             <div><label for="a-email">E-mail</label><input id="a-email" name="email" type="email" autocomplete="email" required></div>
           </div>
           <label class="consent"><input type="checkbox" name="consentimento" required><span>Concordo em receber conteúdos da Advocacia Consciente e li a <a href="/politica-de-privacidade.html" style="color:var(--sand)">Política de Privacidade</a>. Seu resultado no teste não é enviado.</span></label>
           <button class="btn btn-sand" type="submit">Quero receber</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div></div></section>
@@ -245,6 +243,7 @@
   <span>Fale comigo</span>
 </a>
 <script src="/site.js"></script>
+<script src="/forms.js"></script>
 <script src="/quiz.js"></script>
 </body>
 </html>
