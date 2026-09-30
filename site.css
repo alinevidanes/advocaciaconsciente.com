@@ -291,3 +291,11 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
 @media (max-width:760px){.related-grid{grid-template-columns:1fr}.author{flex-direction:column}.weeks li{grid-template-columns:1fr;gap:4px}}
 .author picture{flex:none;width:92px;height:92px;display:block}.author img{width:92px;height:92px;object-position:50% 15%}
 .prod .top.photo img{filter:grayscale(1) sepia(.12) contrast(1.02)}
+/* ---- página em espanhol ---- */
+.menu.open-always{display:flex!important;position:static;flex-direction:row;align-items:center;gap:18px;padding:0;border:0;background:none}
+.menu.open-always a:not(.btn){border:0;padding:0}
+.langsw{font-size:14px;letter-spacing:.08em;color:var(--muted)}
+.langsw a{text-decoration:none}
+.langsw a[aria-current]{color:var(--bronze);font-weight:500}
+.sent-ok{background:#F3EEE6;border:1px solid var(--bronze);padding:14px 18px;margin-bottom:24px}
+@media (max-width:600px){.menu.open-always .btn{display:none}}
