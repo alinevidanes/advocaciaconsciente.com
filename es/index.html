@@ -17,9 +17,7 @@
 <meta property="og:image" content="https://advocaciaconsciente.com/og.jpg">
 <meta name="theme-color" content="#141312">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fonts.css">
 <link rel="stylesheet" href="/site.css">
 <script type="application/ld+json">
 {
@@ -104,8 +102,7 @@
 </header>
 <main>
 <section class="wrap page-hero">
-  <p class="sent-ok" id="sent-ok" hidden>Gracias. Su mensaje fue enviado y le responderé por correo electrónico.</p>
-  <p class="eyebrow">Programa Advocacia Consciente® · en español</p>
+    <p class="eyebrow">Programa Advocacia Consciente® · en español</p>
   <h1>Salud mental en la abogacía: <em>un programa con método científico</em></h1>
   <p class="lead">Un programa de seis semanas para que abogados y equipos jurídicos gestionen mejor la presión, los plazos y los conflictos. Inspirado en el MBSR, adaptado a la abogacía y con el estrés <strong>medido al inicio y al final</strong> con una escala científica validada. En línea, para España y América Latina.</p>
   <div class="ctas"><a class="btn btn-black" href="#contacto">Llevar el PAC a mi despacho</a><a class="btn btn-line" href="#como-funcionan-las-seis-semanas">Ver el programa</a></div>
@@ -181,12 +178,11 @@
       <p class="lead">Cuénteme qué busca su despacho o usted. Le responderé por correo electrónico con una propuesta pensada para su realidad.</p>
       <ul class="contact-list"><li>Correo: <a href="mailto:aline@alinevidanes.com">aline@alinevidanes.com</a></li><li>WhatsApp: <a href="#" data-wa>enviar mensaje</a></li></ul>
     </div>
-    <form class="f" method="POST" action="https://formsubmit.co/aline@alinevidanes.com">
-      <input type="hidden" name="_subject" value="Nueva solicitud (ES) | Advocacia Consciente">
-      <input type="hidden" name="_next" value="https://advocaciaconsciente.com/es/?sent=1">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <form class="f" method="POST" action="https://api.web3forms.com/submit" data-w3f>
+      <input type="hidden" name="access_key" value="25faf4db-9119-431e-aba3-1f1d947e77f1">
+      <input type="hidden" name="subject" value="Solicitud PAC (ES) | advocaciaconsciente.com">
+      <input type="hidden" name="from_name" value="Advocacia Consciente">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
       <div class="row2">
         <div><label for="e-n">Nombre</label><input id="e-n" name="nombre" autocomplete="name" required></div>
         <div><label for="e-e">Correo electrónico</label><input id="e-e" name="email" type="email" autocomplete="email" required></div>
@@ -201,6 +197,7 @@
       <textarea id="e-m" name="mensaje"></textarea>
       <label class="consent"><input type="checkbox" name="consentimiento" required><span>He leído la <a href="/politica-de-privacidade.html" style="color:var(--sand)">Política de Privacidad</a> (en portugués) y acepto recibir la respuesta de Advocacia Consciente.</span></label>
       <button class="btn btn-sand" type="submit">Enviar</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
     </form>
   </div>
 </section>
@@ -216,9 +213,9 @@
   <span>Escríbame</span>
 </a>
 <script src="/site.js"></script>
+<script src="/forms.js"></script>
 <script>
 document.querySelectorAll('[data-wa]').forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("Hola, Aline. Vi el sitio de Advocacia Consciente y me gustaría recibir información sobre el programa.");});
-if(location.search.indexOf('sent=1')>-1){document.getElementById('sent-ok').hidden=false;}
 </script>
 </body>
 </html>
