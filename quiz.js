@@ -1,3 +1,4 @@
+// O cálculo acontece só no navegador: respostas e pontuação não são enviadas nem armazenadas.
 // Autoavaliação: Escala de Estresse Percebido (PSS-10; Cohen, Kamarck & Mermelstein, 1983). Educativa, não diagnóstica.
 var ITENS=[
  {t:"Com que frequência você ficou aborrecido(a) por causa de algo que aconteceu inesperadamente?"},
@@ -30,6 +31,5 @@ document.getElementById('calc').addEventListener('click',function(){
   else{t='Estresse percebido alto';d='Sua pontuação está na faixa alta. Vale olhar para isso com cuidado e, se houver sofrimento intenso, conversar com um profissional de saúde. Um programa estruturado pode complementar esse cuidado.';}
   document.getElementById('rt').textContent=t+' · '+s+' de 40 pontos';
   document.getElementById('rd').textContent=d;
-  document.getElementById('score-field').value=s+'/40 | '+t;
   var r=document.getElementById('result');r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'center'});
 });
