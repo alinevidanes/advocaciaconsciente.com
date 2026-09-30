@@ -2,6 +2,15 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<!-- Consentimento (Consent Mode v2): análise desativada até a pessoa aceitar -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+try{var c=localStorage.getItem('cookie-consent');if(c){var o=c==='granted'?{analytics:1,clarity:1}:c==='denied'?{}:JSON.parse(c),g=function(b){return b?'granted':'denied';};gtag('consent','update',{analytics_storage:g(o.analytics),ad_storage:g(o.marketing),ad_user_data:g(o.marketing),ad_personalization:g(o.marketing)});dataLayer.push({consent_analytics:g(o.analytics),consent_clarity:g(o.clarity),consent_marketing:g(o.marketing)});}}catch(e){}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5LK9J8SR');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Saúde mental na advocacia | Programa Advocacia Consciente</title>
 <meta name="description" content="Programa Advocacia Consciente®: 6 semanas, inspirado no MBSR, para advogados e escritórios reduzirem o estresse. Palestras, NR-1 e autoavaliação.">
@@ -33,23 +42,19 @@
   {
    "@type": "Organization",
    "@id": "https://advocaciaconsciente.com/#org",
-   "name": "Advocacia Consciente",
+   "name": "Programa Advocacia Consciente",
    "url": "https://advocaciaconsciente.com/",
    "logo": "https://advocaciaconsciente.com/favicon.svg",
    "email": "aline@alinevidanes.com",
    "founder": {
-    "@type": "Person",
-    "@id": "https://alinevidanes.com/#aline",
-    "name": "Aline Vidanes",
-    "jobTitle": "Advogada e instrutora de mindfulness",
-    "url": "https://alinevidanes.com/",
-    "sameAs": [
-     "https://www.linkedin.com/in/alinevidanes/",
-     "https://www.instagram.com/aline.vidanes/"
-    ]
+    "@id": "https://alinevidanes.com/#aline"
    },
    "sameAs": [
     "https://www.linkedin.com/in/alinevidanes/"
+   ],
+   "alternateName": [
+    "Advocacia Consciente",
+    "PAC"
    ]
   },
   {
@@ -58,25 +63,118 @@
    "url": "https://advocaciaconsciente.com/programa-pac/",
    "description": "Programa de 6 semanas de mindfulness e gestão do estresse para advogados, inspirado no MBSR, com medição do estresse percebido (PSS-10) no início e no fim.",
    "provider": {
-    "@id": "https://advocaciaconsciente.com/#org"
+    "@type": "Organization",
+    "@id": "https://advocaciaconsciente.com/#org",
+    "name": "Programa Advocacia Consciente",
+    "url": "https://advocaciaconsciente.com/"
    },
-   "inLanguage": "pt-BR"
+   "inLanguage": "pt-BR",
+   "timeRequired": "P6W",
+   "hasCourseInstance": [
+    {
+     "@type": "CourseInstance",
+     "courseMode": "Online",
+     "instructor": {
+      "@type": "Person",
+      "@id": "https://alinevidanes.com/#aline",
+      "name": "Aline Vidanes"
+     },
+     "courseSchedule": {
+      "@type": "Schedule",
+      "repeatFrequency": "P1W",
+      "repeatCount": 6
+     }
+    },
+    {
+     "@type": "CourseInstance",
+     "courseMode": "Onsite",
+     "instructor": {
+      "@type": "Person",
+      "@id": "https://alinevidanes.com/#aline",
+      "name": "Aline Vidanes"
+     },
+     "courseSchedule": {
+      "@type": "Schedule",
+      "repeatFrequency": "P1W",
+      "repeatCount": 6
+     }
+    }
+   ]
   },
   {
    "@type": "Book",
    "name": "Advocacia Consciente: Saúde Mental e Bem-Estar para Advogados",
    "author": {
-    "@id": "https://alinevidanes.com/#aline"
+    "@id": "https://alinevidanes.com/#aline",
+    "@type": "Person",
+    "name": "Aline Vidanes"
    },
    "publisher": {
     "@type": "Organization",
     "name": "Freitas Bastos Editora"
    },
-   "image": "https://advocaciaconsciente.com/livro-capa.jpg"
+   "image": "https://advocaciaconsciente.com/livro-capa.jpg",
+   "isbn": "978-65-5675-530-4",
+   "inLanguage": "pt-BR",
+   "url": "https://advocaciaconsciente.com/#livro",
+   "description": "Estresse, burnout, inteligência emocional, relações de trabalho e liderança na advocacia, com dez práticas aplicadas e referências científicas.",
+   "potentialAction": [
+    {
+     "@type": "BuyAction",
+     "name": "Comprar na editora",
+     "target": "https://www.freitasbastos.com.br/advocacia-consciente--saude-mental-e-bem-estar-para-advogados-61745399"
+    },
+    {
+     "@type": "BuyAction",
+     "name": "Ver na Amazon",
+     "target": "https://www.amazon.com.br/Advocacia-Consciente-Mental-Bem-Estar-Advogados/dp/6556755303"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://alinevidanes.com/#aline",
+   "name": "Aline Vidanes",
+   "jobTitle": "Advogada e instrutora de mindfulness",
+   "url": "https://alinevidanes.com/",
+   "hasCredential": [
+    {
+     "@type": "EducationalOccupationalCredential",
+     "credentialCategory": "Inscrição profissional",
+     "name": "OAB/SP 396.351",
+     "recognizedBy": {
+      "@type": "Organization",
+      "name": "Ordem dos Advogados do Brasil, Seção São Paulo"
+     }
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "credentialCategory": "Inscrição profissional",
+     "name": "Cédula profissional 61988P",
+     "recognizedBy": {
+      "@type": "Organization",
+      "name": "Ordem dos Advogados (Portugal)"
+     }
+    }
+   ],
+   "sameAs": [
+    "https://www.instagram.com/aline.vidanes/",
+    "https://www.linkedin.com/in/alinevidanes/",
+    "https://alinevidanes.com/"
+   ]
   },
   {
    "@type": "FAQPage",
+   "@id": "https://advocaciaconsciente.com/#faq",
    "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Referências",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cohen, S.; Kamarck, T.; Mermelstein, R. (1983). A global measure of perceived stress. Journal of Health and Social Behavior, 24(4), 385–396. Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delta. Kabat-Zinn, J. (2003). Mindfulness-based interventions in context: past, present, and future. Clinical Psychology: Science and Practice. García Campayo, J.; Demarzo, M. (2018). ¿Qué sabemos del mindfulness? Kairós. Cosenza, R. M. (2021). Neurociência e mindfulness. Artmed. Costa, M. F. A. A.; Ferreira, M. C. (2014). Sources and Reactions to Stress in Brazilian Lawyers. Paidéia, 24(57), 49–56. Goh, J.; Pfeffer, J.; Zenios, S. A. (2015). Workplace stressors & health outcomes. Behavioral Science & Policy, 1(1), 43–52. Allen, J. G.; Romate, J.; Rajkumar, E. (2021). Mindfulness-based positive psychology interventions: a systematic review. BMC Psychology, 9."
+     }
+    },
     {
      "@type": "Question",
      "name": "O PAC tem alguma relação com religião ou espiritualidade?",
@@ -124,6 +222,9 @@
 </script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LK9J8SR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header>
   <div class="wrap nav">
@@ -139,7 +240,7 @@
       <a href="#livro">O livro</a>
       <a href="#artigos">Artigos</a>
       <a href="/es/" hreflang="es" lang="es" title="En español">ES</a>
-      <a class="btn btn-black" href="#contato">Solicitar proposta</a>
+      <a class="btn btn-black" href="#contato" data-track="cta-solicitar-proposta">Solicitar proposta</a>
     </nav>
   </div>
 </header>
@@ -153,7 +254,7 @@
     <h1>Advogar com excelência, <em>sem viver no limite.</em></h1>
     <p class="lead">O PAC, Programa Advocacia Consciente®, é um protocolo de 6 semanas, inspirado no MBSR e adaptado à advocacia, que ajuda advogados e equipes jurídicas a lidar melhor com pressão, prazos e conflitos, com medição do estresse percebido no início e no fim.</p>
     <div class="ctas">
-      <a class="btn btn-black" href="#contato">Levar o PAC ao escritório</a>
+      <a class="btn btn-black" href="#contato" data-track="cta-contato">Levar o PAC ao escritório</a>
       <a class="btn btn-line" href="#autoavaliacao">Fazer a autoavaliação</a>
     </div>
     <p class="micro">Autoavaliação gratuita · 10 perguntas · cerca de 3 minutos</p>
@@ -276,7 +377,7 @@
 </section>
 
 <!-- 7. AUTOAVALIAÇÃO (reciprocidade) -->
-<section id="autoavaliacao" class="quiz sec">
+<section id="autoavaliacao" data-clarity-mask="True" class="quiz sec">
   <div class="wrap">
     <div>
       <span class="eyebrow">Autoavaliação gratuita</span>
@@ -294,7 +395,7 @@
         <h3 id="rt"></h3>
         <p id="rd"></p>
         <p>Quer receber a prática <em>Respiração de 3 minutos para advogados</em> e avisos das próximas turmas?</p>
-        <form class="f" name="pratica-guiada" method="POST" action="https://api.web3forms.com/submit" style="margin-top:14px" data-w3f>
+        <form class="f" name="pratica-guiada" method="POST" action="https://api.web3forms.com/submit" style="margin-top:14px" data-w3f data-track="formulario-pratica-respiracao">
       <input type="hidden" name="access_key" value="25faf4db-9119-431e-aba3-1f1d947e77f1">
       <input type="hidden" name="subject" value="Inscrição prática de respiração | advocaciaconsciente.com (página inicial)">
       <input type="hidden" name="from_name" value="Advocacia Consciente">
@@ -333,7 +434,7 @@
           <li><b>Somam tarefas a quem já está sobrecarregado.</b><span>As práticas são curtas e integradas à rotina.</span></li>
           <li><b>São genéricos.</b><span>O PAC foi criado por uma advogada, para a realidade da advocacia.</span></li>
         </ul>
-        <a class="btn btn-sand" href="#contato" style="margin-top:28px">Solicitar proposta</a>
+        <a class="btn btn-sand" href="#contato" style="margin-top:28px" data-track="cta-solicitar-proposta">Solicitar proposta</a>
       </div>
     </div>
     <p class="note">O PAC é um programa educacional de promoção de saúde mental. Pode integrar as ações do escritório nessas frentes, mas não substitui a avaliação técnica de segurança e saúde no trabalho exigida pela NR-1, nem acompanhamento psicológico ou médico.</p>
@@ -347,11 +448,11 @@
   <div class="prod-grid">
     <article class="prod">
       <div class="top photo"><img src="/img/equipe-480.webp" srcset="/img/equipe-480.webp 480w, /img/equipe-960.webp 960w" sizes="(max-width:600px) calc(100vw - 40px), (max-width:1080px) 45vw, 400px" alt="Profissionais reunidos em torno de uma mesa de reuniões, junto a uma janela ampla" width="960" height="600" loading="lazy"></div>
-      <div class="body"><small>Escritórios</small><h3>Programa para equipes</h3><p>O protocolo completo aplicado a sócios, advogados e equipe de apoio, com avaliação no início e no fim. <a href="/programa-pac/">Como funciona o PAC →</a></p><a class="btn btn-black" href="#contato">Solicitar proposta</a></div>
+      <div class="body"><small>Escritórios</small><h3>Programa para equipes</h3><p>O protocolo completo aplicado a sócios, advogados e equipe de apoio, com avaliação no início e no fim. <a href="/programa-pac/">Como funciona o PAC →</a></p><a class="btn btn-black" href="#contato" data-track="cta-solicitar-proposta">Solicitar proposta</a></div>
     </article>
     <article class="prod">
       <div class="top photo"><img src="aline-mentoria-pb.jpg" alt="Aline Vidanes em sessão online" width="1600" height="1067"></div>
-      <div class="body"><small>Individual</small><h3>Mentoria e turmas abertas</h3><p>Para advogados e advogadas que querem aplicar o protocolo individualmente, com acompanhamento online.</p><a class="btn btn-line" href="#contato">Entrar na lista</a></div>
+      <div class="body"><small>Individual</small><h3>Mentoria e turmas abertas</h3><p>Para advogados e advogadas que querem aplicar o protocolo individualmente, com acompanhamento online.</p><a class="btn btn-line" href="#contato" data-track="cta-contato">Entrar na lista</a></div>
     </article>
     <article class="prod">
       <div class="top"><img src="livro-capa.jpg" alt="Capa do livro Advocacia Consciente" width="539" height="794"></div>
@@ -359,11 +460,11 @@
     </article>
     <article class="prod">
       <div class="top photo"><img src="/img/palestras-480.webp" srcset="/img/palestras-480.webp 480w, /img/palestras-960.webp 960w" sizes="(max-width:600px) calc(100vw - 40px), (max-width:1080px) 45vw, 400px" alt="Microfone em primeiro plano diante de um auditório" width="960" height="600" loading="lazy"></div>
-      <div class="body"><small>Eventos</small><h3>Palestras e workshops</h3><p>Para seccionais e comissões da OAB, eventos jurídicos, faculdades e escritórios. <a href="/palestras/">Ver temas →</a></p><a class="btn btn-line" href="#contato">Convidar</a></div>
+      <div class="body"><small>Eventos</small><h3>Palestras e workshops</h3><p>Para seccionais e comissões da OAB, eventos jurídicos, faculdades e escritórios. <a href="/palestras/">Ver temas →</a></p><a class="btn btn-line" href="#contato" data-track="cta-contato">Convidar</a></div>
     </article>
     <article class="prod">
       <div class="top photo"><img src="/img/curso-online-480.webp" srcset="/img/curso-online-480.webp 480w, /img/curso-online-960.webp 960w" sizes="(max-width:600px) calc(100vw - 40px), (max-width:1080px) 45vw, 400px" alt="Mesa de trabalho com computador junto à janela, com luz natural" width="960" height="600" loading="lazy"></div>
-      <div class="body"><span class="badge-soon">Em breve</span><h3>PAC online, no seu ritmo</h3><p>O protocolo em formato de curso, com videoaulas e práticas guiadas.</p><a class="btn btn-line" href="#contato">Avisar quando abrir</a></div>
+      <div class="body"><span class="badge-soon">Em breve</span><h3>PAC online, no seu ritmo</h3><p>O protocolo em formato de curso, com videoaulas e práticas guiadas.</p><a class="btn btn-line" href="#contato" data-track="cta-contato">Avisar quando abrir</a></div>
     </article>
     <article class="prod">
       <div class="top photo"><img src="/img/autoavaliacao-480.webp" srcset="/img/autoavaliacao-480.webp 480w, /img/autoavaliacao-960.webp 960w" sizes="(max-width:600px) calc(100vw - 40px), (max-width:1080px) 45vw, 400px" alt="Caderno e lápis sobre uma mesa clara" width="960" height="600" loading="lazy"></div>
@@ -417,8 +518,8 @@
       <blockquote>“Não se trata de abdicar da excelência, mas de transformá-la: uma advocacia mais consciente é uma advocacia mais potente.”</blockquote>
       <p class="meta">Freitas Bastos Editora · Impresso e e-book · ISBN 978-65-5675-530-4</p>
       <div class="ctas">
-        <a class="btn btn-black" href="https://www.freitasbastos.com.br/advocacia-consciente--saude-mental-e-bem-estar-para-advogados-61745399" target="_blank" rel="noopener">Comprar na editora</a>
-        <a class="btn btn-line" href="https://www.amazon.com.br/Advocacia-Consciente-Mental-Bem-Estar-Advogados/dp/6556755303" target="_blank" rel="noopener">Ver na Amazon</a>
+        <a class="btn btn-black" href="https://www.freitasbastos.com.br/advocacia-consciente--saude-mental-e-bem-estar-para-advogados-61745399" target="_blank" rel="noopener" data-track="livro-editora">Comprar na editora</a>
+        <a class="btn btn-line" href="https://www.amazon.com.br/Advocacia-Consciente-Mental-Bem-Estar-Advogados/dp/6556755303" target="_blank" rel="noopener" data-track="livro-amazon">Ver na Amazon</a>
       </div>
     </div>
   </div>
@@ -428,13 +529,13 @@
 <section id="artigos" class="wrap sec">
   <span class="eyebrow">Artigos</span>
   <h2 class="h2">Reflexões sobre saúde mental <em>e advocacia</em></h2>
-  <p class="lead">Textos de Aline Vidanes publicados no LinkedIn.</p>
+  <p class="lead">Textos de Aline Vidanes sobre saúde mental, liderança e bem-estar na advocacia. <a href="/artigos/">Ver todos os artigos</a>.</p>
   <ul class="art-list">
-<li><a href="https://www.linkedin.com/pulse/urg%C3%AAncia-da-sa%C3%BAde-mental-na-advocacia-aline-vidanes-lwlce" target="_blank" rel="noopener"><h3>A urgência da saúde mental na advocacia</h3><p>Reflexões a partir de uma reportagem do jornal espanhol El Confidencial sobre a saúde mental dos profissionais do Direito.</p><span>Ler no LinkedIn →</span></a></li>
-<li><a href="https://www.linkedin.com/pulse/lideran%C3%A7a-consciente-transformando-o-estresse-em-na-aline-vidanes-kbyue" target="_blank" rel="noopener"><h3>Liderança consciente: transformando o estresse em inspiração</h3><p>Como a forma de o líder lidar com a pressão afeta toda a equipe do escritório.</p><span>Ler no LinkedIn →</span></a></li>
-<li><a href="https://www.linkedin.com/pulse/mindfulness-e-advocacia-3-benef%C3%ADcios-transformadores-para-vidanes-m59ee" target="_blank" rel="noopener"><h3>Mindfulness e advocacia: 3 benefícios para a prática jurídica</h3><p>O que a atenção plena pode mudar no dia a dia de quem advoga.</p><span>Ler no LinkedIn →</span></a></li>
-<li><a href="https://www.linkedin.com/pulse/import%C3%A2ncia-da-compaix%C3%A3o-ambiente-de-trabalho-aline-vidanes" target="_blank" rel="noopener"><h3>Reflexões sobre a compaixão no ambiente de trabalho</h3><p>A partir de um artigo da Harvard Business Review, o papel da compaixão nas relações profissionais.</p><span>Ler no LinkedIn →</span></a></li>
-<li><a href="https://www.linkedin.com/pulse/import%C3%A2ncia-da-sa%C3%BAde-mental-ambiente-de-trabalho-aline-vidanes" target="_blank" rel="noopener"><h3>A importância da saúde mental no ambiente de trabalho</h3><p>Por que cuidar da saúde mental da equipe é também uma decisão de gestão.</p><span>Ler no LinkedIn →</span></a></li>
+<li><a href="/artigos/saude-mental-dos-advogados/"><h3>Saúde mental dos advogados: uma urgência da profissão</h3><p>Reflexões a partir de uma reportagem do El Confidencial: ansiedade, esgotamento e o que falta para os escritórios agirem.</p><span>Ler o artigo →</span></a></li>
+<li><a href="/artigos/lideranca-consciente-na-advocacia/"><h3>Liderança consciente na advocacia: do estresse à inspiração</h3><p>Como a forma de o líder lidar com a pressão afeta toda a equipe, e o que a neurociência ensina sobre liderar com consciência.</p><span>Ler o artigo →</span></a></li>
+<li><a href="/artigos/mindfulness-para-advogados/"><h3>Mindfulness para advogados: 3 benefícios para a prática jurídica</h3><p>Concentração, menos estresse e relações mais fortes: o que a atenção plena pode mudar no dia a dia de quem advoga.</p><span>Ler o artigo →</span></a></li>
+<li><a href="/artigos/compaixao-no-ambiente-de-trabalho/"><h3>Compaixão no ambiente de trabalho: por que funciona melhor que a rigidez</h3><p>A partir de um artigo da Harvard Business Review, o papel da compaixão na liderança e nas relações profissionais.</p><span>Ler o artigo →</span></a></li>
+<li><a href="/artigos/saude-mental-no-ambiente-de-trabalho/"><h3>Saúde mental no ambiente de trabalho: por que é essencial</h3><p>Por que cuidar da saúde mental da equipe é também uma decisão de gestão, com efeitos em produtividade, relações e retenção.</p><span>Ler o artigo →</span></a></li>
   </ul>
 </section>
 
@@ -461,11 +562,11 @@
       <h2 class="h2">O primeiro passo é <em>uma conversa.</em></h2>
       <p class="lead">Conte o que o escritório ou você procura. Retorno por e-mail, com uma proposta pensada para a sua realidade.</p>
       <ul class="contact-list">
-        <li>E-mail: <a href="mailto:aline@alinevidanes.com">aline@alinevidanes.com</a></li>
-        <li>WhatsApp: <a href="#" data-wa>enviar mensagem</a></li>
+        <li>E-mail: <a href="mailto:aline@alinevidanes.com" data-track="email">aline@alinevidanes.com</a></li>
+        <li>WhatsApp: <a href="#" data-wa data-track="whatsapp">enviar mensagem</a></li>
       </ul>
     </div>
-    <form class="f" name="proposta" method="POST" action="https://api.web3forms.com/submit" data-w3f>
+    <form class="f" name="proposta" method="POST" action="https://api.web3forms.com/submit" data-w3f data-track="formulario-proposta">
       <input type="hidden" name="access_key" value="25faf4db-9119-431e-aba3-1f1d947e77f1">
       <input type="hidden" name="subject" value="Proposta PAC | advocaciaconsciente.com">
       <input type="hidden" name="from_name" value="Advocacia Consciente">
@@ -498,10 +599,10 @@
       <p style="margin-top:16px;max-width:380px">PAC, Programa Advocacia Consciente®, é um programa educacional criado por Aline Vidanes. Não substitui acompanhamento psicológico ou médico.</p>
     </div>
     <nav aria-label="Contato">
-      <a href="mailto:aline@alinevidanes.com">aline@alinevidanes.com</a>
-      <a href="#" data-wa>WhatsApp</a>
-      <a href="https://www.instagram.com/aline.vidanes/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.linkedin.com/in/alinevidanes/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:aline@alinevidanes.com" data-track="email">aline@alinevidanes.com</a>
+      <a href="#" data-wa data-track="whatsapp">WhatsApp</a>
+      <a href="https://www.instagram.com/aline.vidanes/" target="_blank" rel="noopener" data-track="rede-social">Instagram</a>
+      <a href="https://www.linkedin.com/in/alinevidanes/" target="_blank" rel="noopener" data-track="rede-social">LinkedIn</a>
     </nav>
     <nav aria-label="Advocacia">
       <span style="color:var(--ivory)">Advocacia de família</span>
@@ -515,7 +616,7 @@
   </div>
 </footer>
 
-<a class="wa" href="#" data-wa aria-label="Conversar pelo WhatsApp">
+<a class="wa" href="#" data-wa aria-label="Conversar pelo WhatsApp" data-track="whatsapp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
   <span>Fale comigo</span>
 </a>
@@ -523,5 +624,6 @@
 <script src="/site.js"></script>
 <script src="/forms.js"></script>
 <script src="/quiz.js"></script>
+<script src="/tracking.js"></script>
 </body>
 </html>

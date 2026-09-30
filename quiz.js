@@ -1,4 +1,5 @@
-// O cálculo acontece só no navegador: respostas e pontuação não são enviadas nem armazenadas.
+// O cálculo acontece só no navegador. Respostas e pontuação nunca são enviadas nem armazenadas.
+// Com autorização de cookies de estatística, apenas a faixa do resultado (baixo, moderado ou alto) é contada no Google Analytics.
 // Autoavaliação: Escala de Estresse Percebido (PSS-10; Cohen, Kamarck & Mermelstein, 1983). Educativa, não diagnóstica.
 var ITENS=[
  {t:"Com que frequência você ficou aborrecido(a) por causa de algo que aconteceu inesperadamente?"},
@@ -25,11 +26,12 @@ document.getElementById('calc').addEventListener('click',function(){
   var err=document.getElementById('qerr');
   if(miss){err.textContent='Responda todas as perguntas para ver o resultado.';return;}
   err.textContent='';
-  var t,d;
-  if(s<=13){t='Estresse percebido baixo';d='Sua pontuação está na faixa baixa. Um bom momento para fortalecer hábitos de proteção, pausas de atenção e limites claros, antes que a pressão aumente.';}
-  else if(s<=26){t='Estresse percebido moderado';d='Sua pontuação está na faixa moderada. Situações do dia a dia têm sido percebidas como imprevisíveis ou sobrecarregantes com alguma frequência. Práticas estruturadas de atenção e gestão do estresse podem ajudar a reorganizar a rotina.';}
-  else{t='Estresse percebido alto';d='Sua pontuação está na faixa alta. Vale olhar para isso com cuidado e, se houver sofrimento intenso, conversar com um profissional de saúde. Um programa estruturado pode complementar esse cuidado.';}
+  var t,d,faixa;
+  if(s<=13){faixa='baixo';t='Estresse percebido baixo';d='Sua pontuação está na faixa baixa. Um bom momento para fortalecer hábitos de proteção, pausas de atenção e limites claros, antes que a pressão aumente.';}
+  else if(s<=26){faixa='moderado';t='Estresse percebido moderado';d='Sua pontuação está na faixa moderada. Situações do dia a dia têm sido percebidas como imprevisíveis ou sobrecarregantes com alguma frequência. Práticas estruturadas de atenção e gestão do estresse podem ajudar a reorganizar a rotina.';}
+  else{faixa='alto';t='Estresse percebido alto';d='Sua pontuação está na faixa alta. Vale olhar para isso com cuidado e, se houver sofrimento intenso, conversar com um profissional de saúde. Um programa estruturado pode complementar esse cuidado.';}
   document.getElementById('rt').textContent=t+' · '+s+' de 40 pontos';
   document.getElementById('rd').textContent=d;
+  (window.dataLayer=window.dataLayer||[]).push({event:'conversao',conversao:'autoavaliacao-concluida',faixa:faixa});
   var r=document.getElementById('result');r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'center'});
 });
