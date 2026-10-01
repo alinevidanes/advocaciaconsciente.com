@@ -306,3 +306,7 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
 .form-status{margin:10px 0 0;font-size:14px;line-height:1.5;min-height:1.5em;color:var(--sand)}
 .form-status a{color:inherit;text-decoration:underline}
 .form-status.err{color:#F2C4B0}
+
+/* logo escrito AC */
+/* logo escrito AC v2 */
+.logo .logo-img{display:block;height:50px;width:auto}footer .logo{align-items:flex-start}footer .logo .logo-img{height:60px}@media (max-width:760px){.logo .logo-img{height:42px}}
