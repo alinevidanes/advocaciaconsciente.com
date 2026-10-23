@@ -310,3 +310,6 @@ footer{background:#0C0B0A;color:#A69D90;font-size:14.5px}
 /* logo escrito AC */
 /* logo escrito AC v2 */
 .logo .logo-img{display:block;height:50px;width:auto}footer .logo{align-items:flex-start}footer .logo .logo-img{height:60px}@media (max-width:760px){.logo .logo-img{height:42px}}
+
+/* Artigos: largura de leitura no computador (23/10/2026). O padding lateral de 96px reduzia o texto a 608px. */
+@media (min-width:1080px){.art{max-width:calc(720px + 2*var(--pad))}.art p,.art li{font-size:18px}}
