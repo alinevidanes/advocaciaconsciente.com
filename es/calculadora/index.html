@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<!-- Consentimento (Consent Mode v2): análise desativada até a pessoa aceitar -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+try{var c=localStorage.getItem('cookie-consent');if(c){var o=c==='granted'?{analytics:1,clarity:1}:c==='denied'?{}:JSON.parse(c),g=function(b){return b?'granted':'denied';};gtag('consent','update',{analytics_storage:g(o.analytics),ad_storage:g(o.marketing),ad_user_data:g(o.marketing),ad_personalization:g(o.marketing)});dataLayer.push({consent_analytics:g(o.analytics),consent_clarity:g(o.clarity),consent_marketing:g(o.marketing)});}}catch(e){}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5LK9J8SR');</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Cuánto cuesta el agotamiento? Calculadora | Advocacia Consciente</title>
+<meta name="description" content="Estimación educativa, en dinero y en horas, de lo que el agotamiento puede consumir en el trabajo de abogados y estudios jurídicos. Sin datos de salud.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://advocaciaconsciente.com/es/calculadora/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="¿Cuánto cuesta el agotamiento?">
+<meta property="og:description" content="Estimación educativa, en dinero y en horas, de lo que el agotamiento puede consumir en el trabajo. No pide datos de salud y nada se guarda.">
+<meta property="og:url" content="https://advocaciaconsciente.com/es/calculadora/">
+<meta property="og:image" content="https://advocaciaconsciente.com/og.jpg">
+<meta name="theme-color" content="#141312">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/site.css?v=20261001ac">
+<style>
+.calc{--fg:#141312;--muted:#5b534b;--line:#d9cfc1;--card:#fbf8f3;--accent:#7A5C3A;--warn:#C2502E;max-width:640px;margin:0 auto;padding:40px 20px 32px;font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.55;color:var(--fg)}
+.calc h1,.calc h2{font-family:'Newsreader',Georgia,serif;font-weight:500;letter-spacing:-.01em;margin:0}
+.calc h1{font-size:clamp(38px,8vw,58px);line-height:1.04}
+.calc h2{font-size:clamp(28px,5.4vw,38px);line-height:1.12}
+.calc p{margin:0 0 1em}
+.calc .lead{font-size:19px;color:var(--muted);margin:20px 0 32px}
+.calc .screen{display:none}.calc .screen.on{display:block}
+.calc .choices{display:grid;gap:14px}
+.calc .choice{all:unset;box-sizing:border-box;cursor:pointer;display:block;border:1.5px solid var(--fg);border-radius:4px;padding:20px 22px;background:var(--card)}
+.calc .choice strong{display:block;font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:24px;line-height:1.2}
+.calc .choice span{color:var(--muted);font-size:16px}
+.calc .choice:hover{border-color:var(--accent)}
+.calc .choice:focus-visible,.calc button:focus-visible,.calc input:focus-visible,.calc summary:focus-visible,.calc a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.calc .note{font-size:15px;color:var(--muted);margin-top:22px}
+.calc .steps{display:flex;gap:6px;margin:0 0 26px;padding:0;list-style:none}
+.calc .steps li{height:4px;flex:1;background:var(--line);border-radius:2px}
+.calc .steps li.done{background:var(--fg)}
+.calc .field{margin:26px 0}
+.calc label{display:block;font-weight:500;margin-bottom:6px}
+.calc .help{display:block;font-size:14.5px;color:var(--muted);margin-top:6px}
+.calc .inwrap{display:flex;align-items:center;border-bottom:2px solid var(--fg);max-width:320px}
+.calc .inwrap span{font-family:'Newsreader',Georgia,serif;font-size:22px;color:var(--muted);padding-left:8px}
+.calc input{font:inherit;font-family:'Newsreader',Georgia,serif;font-size:30px;background:transparent;color:var(--fg);border:0;padding:6px 0;width:100%;min-height:44px}
+.calc input::placeholder{color:#c9bdac}
+.calc .err{color:var(--warn);font-size:15px;margin-top:6px;min-height:1.2em}
+.calc .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.calc .cbtn{font:inherit;font-weight:500;cursor:pointer;border-radius:4px;padding:13px 22px;min-height:44px;border:1.5px solid var(--fg);background:var(--fg);color:#F3EEE6;text-decoration:none;display:inline-block}
+.calc .cbtn.ghost{background:transparent;color:var(--fg)}
+.calc .num{white-space:nowrap}
+.calc .battery{margin:30px 0 8px}.calc .battery svg{width:100%;height:auto;display:block}
+.calc .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px;color:var(--muted)}
+.calc .legend i{display:inline-block;width:14px;height:10px;margin-right:6px;border-radius:1px}
+.calc .facts{border-top:1px solid var(--line);margin:28px 0 0}
+.calc .facts div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.calc .facts dt{color:var(--muted)}.calc .facts dd{margin:0;font-family:'Newsreader',Georgia,serif;font-size:20px;text-align:right}
+.calc .block{margin-top:30px}.calc .block h3{font-size:17px;font-weight:600;margin:0 0 6px}
+.calc details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin-top:30px}
+.calc summary{cursor:pointer;font-weight:500}
+.calc details ol,.calc .sources{padding-left:1.2em;margin:12px 0 0;font-size:15.5px}
+.calc details li,.calc .sources li{margin-bottom:8px}
+.calc .comp{margin-top:26px}
+.calc .row{display:grid;gap:4px;padding:12px 0;border-bottom:1px solid var(--line)}
+.calc .row .lab{display:flex;justify-content:space-between;gap:12px;font-size:16px}
+.calc .row .lab b{font-weight:500}.calc .row .val{font-family:'Newsreader',Georgia,serif;white-space:nowrap}
+.calc .track{position:relative;height:10px;background:var(--line);border-radius:5px;overflow:hidden}
+.calc .track .lo{position:absolute;left:0;top:0;bottom:0;background:var(--fg)}
+.calc .track .hi{position:absolute;top:0;bottom:0;background:var(--warn);opacity:.75}
+.calc .flag{display:inline-block;font-size:13px;color:var(--warn);margin-left:6px}
+.calc .sub{margin-top:30px;padding:22px 20px;background:var(--card);border:1px solid #e2d9cb}
+.calc .sub h3{font-family:'Newsreader',Georgia,serif;font-size:24px;font-weight:500;margin:0 0 6px}
+.calc .sub .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 12px}
+@media (max-width:560px){.calc .sub .row2{grid-template-columns:1fr}}
+.calc .sub label{font-size:15px;margin-bottom:4px}
+.calc .sub input[type=text],.calc .sub input[type=email]{font-family:inherit;font-size:17px;background:#fff;color:#141312;border:1px solid #CFC6B8;border-radius:4px;padding:10px 12px;min-height:44px;box-sizing:border-box;width:100%}
+.calc .sub .consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:15px;margin:4px 0 14px}
+.calc .sub .consent input{width:20px;height:20px;min-height:0;margin-top:2px;flex:0 0 auto}
+.calc .sub .form-status{min-height:1.2em;font-size:15px;margin:0 0 10px}
+.calc .sub .form-status.err{color:#9b2c1c}
+.calc .sub .disc{font-size:13.5px;color:#6B6258;margin:14px 0 0}
+.calc .sub .ok{font-size:17px;margin:8px 0 0}
+.calc .care{margin-top:34px;padding:16px 18px;border-left:3px solid var(--accent);background:var(--card);font-size:15.5px}
+.calc a{color:var(--accent)}
+.calc-foot{max-width:640px;margin:0 auto;padding:22px 20px 48px;font-size:13.5px;color:#5b534b;border-top:1px solid #d9cfc1;font-family:'Jost',system-ui,sans-serif}
+.calc-foot a{color:inherit}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LK9J8SR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/es/" aria-label="Advocacia Consciente"><img class="logo-img" src="/logo-ac.svg" alt="Advocacia Consciente" width="113" height="50"></a>
+  </div>
+</header>
+<main class="calc" id="app">
+
+  <section class="screen on" id="s-home" aria-labelledby="h-home">
+    <h1 id="h-home">¿Cuánto cuesta el agotamiento?</h1>
+    <p class="lead">Una estimación, en dinero y en horas, de lo que el agotamiento puede consumir en el trabajo, a partir de estudios publicados. Toma dos minutos y no pide ningún dato de salud.</p>
+    <div class="choices">
+      <button class="choice" data-go="v1"><strong>Para ti</strong><span>Calcula el valor del tiempo de trabajo que rinde menos.</span></button>
+      <button class="choice" data-go="e1"><strong>Para tu estudio</strong><span>Calcula el costo para el equipo en un año.</span></button>
+    </div>
+    <p class="note">Los números que escribes no se guardan ni se envían. El cálculo ocurre en tu navegador.</p>
+    <p class="note"><a href="#" data-go="fin">Prefiero recibirla por correo, con el Desafío de 7 días</a></p>
+  </section>
+
+  <section class="screen" id="s-v1" aria-labelledby="h-v1">
+    <ol class="steps" aria-label="Paso 1 de 3"><li class="done"></li><li></li><li></li></ol>
+    <h2 id="h-v1" tabindex="-1">Tu rutina de trabajo</h2>
+    <div class="field">
+      <label for="v-renda">Ingreso mensual promedio por tu trabajo, en tu moneda</label>
+      <div class="inwrap"><input id="v-renda" inputmode="decimal" autocomplete="off" data-clarity-mask="true"></div>
+      <span class="help">Promedio de los últimos 12 meses, antes de impuestos. Puede ser aproximado.</span>
+      <div class="err" id="v-renda-err" aria-live="polite"></div>
+    </div>
+    <div class="field">
+      <label for="v-horas">Horas de trabajo por semana</label>
+      <div class="inwrap"><input id="v-horas" inputmode="numeric" autocomplete="off" data-clarity-mask="true"></div>
+      <span class="help">Cuenta también noches y fines de semana.</span>
+      <div class="err" id="v-horas-err" aria-live="polite"></div>
+    </div>
+    <div class="field">
+      <label for="v-semanas">Semanas de trabajo por año</label>
+      <div class="inwrap"><input id="v-semanas" inputmode="numeric" autocomplete="off" value="46" data-clarity-mask="true"></div>
+      <span class="help">El año tiene 52; descuenta vacaciones y feriados.</span>
+      <div class="err" id="v-semanas-err" aria-live="polite"></div>
+    </div>
+    <div class="actions"><button class="cbtn" id="v-calc">Ver el resultado</button><button class="cbtn ghost" data-go="home">Volver</button></div>
+  </section>
+
+  <section class="screen" id="s-v2" aria-labelledby="h-v2">
+    <ol class="steps" aria-label="Paso 2 de 3"><li class="done"></li><li class="done"></li><li></li></ol>
+    <h2 id="h-v2" tabindex="-1" aria-live="polite"></h2>
+    <div class="battery" id="v-battery" aria-hidden="true"></div>
+    <div class="legend" id="v-legend"></div>
+    <p class="block" id="v-sub"></p>
+    <div class="block"><h3>Qué significa</h3><p>Estudios con trabajadores muestran que, con agotamiento, las horas trabajadas rinden entre 10% y 12% menos, y parte del tiempo se pierde en ausencias. Aplicamos esos rangos a tu ingreso y a tus horas. Es una hipótesis basada en estudios, no una medida tuya.</p></div>
+    <div class="block"><h3>Lo que no muestra</h3><p>La calculadora solo mide tiempo y dinero. No muestra lo que el agotamiento quita fuera del trabajo.</p></div>
+    <details>
+      <summary>Cómo calculamos</summary>
+      <ol>
+        <li>Ingreso anual = ingreso mensual × 12. Valor de la hora = ingreso anual ÷ (horas por semana × semanas por año).</li>
+        <li>Presentismo = ingreso anual × 10% a 12% (Stewart y colegas, JAMA, 2003; Hyeda y Handar, Revista Brasileira de Medicina do Trabalho, 2011).</li>
+        <li>Ausencias = presentismo × 0,235 a 0,307 (Stewart, 2003; Deloitte, 2024).</li>
+        <li>Total = presentismo + ausencias.</li>
+      </ol>
+      <p class="note">No hay un estudio de este tipo hecho con abogados. Los números vienen de estudios con trabajadores de Estados Unidos, el Reino Unido y Brasil. <a href="#" data-go="fuentes">Ver todas las fuentes</a></p>
+    </details>
+    <div class="actions"><button class="cbtn" data-go="fin">¿Y ahora?</button><button class="cbtn ghost" data-go="v1">Cambiar los números</button></div>
+  </section>
+
+  <section class="screen" id="s-e1" aria-labelledby="h-e1">
+    <ol class="steps" aria-label="Paso 1 de 3"><li class="done"></li><li></li><li></li></ol>
+    <h2 id="h-e1" tabindex="-1">Sobre el equipo</h2>
+    <div class="field">
+      <label for="e-pessoas">Personas en el estudio</label>
+      <div class="inwrap"><input id="e-pessoas" inputmode="numeric" autocomplete="off" data-clarity-mask="true"></div>
+      <span class="help">Abogados y equipo.</span>
+      <div class="err" id="e-pessoas-err" aria-live="polite"></div>
+    </div>
+    <div class="field">
+      <label for="e-custo">Costo anual promedio por persona, en tu moneda</label>
+      <div class="inwrap"><input id="e-custo" inputmode="decimal" autocomplete="off" data-clarity-mask="true"></div>
+      <span class="help">Remuneración, cargas y beneficios, en promedio. Puede ser aproximado.</span>
+      <div class="err" id="e-custo-err" aria-live="polite"></div>
+    </div>
+    <div class="actions"><button class="cbtn" id="e-next">Continuar</button><button class="cbtn ghost" data-go="home">Volver</button></div>
+  </section>
+
+  <section class="screen" id="s-e2" aria-labelledby="h-e2">
+    <ol class="steps" aria-label="Paso 2 de 3"><li class="done"></li><li class="done"></li><li></li></ol>
+    <h2 id="h-e2" tabindex="-1">Quién sale del estudio</h2>
+    <div class="field">
+      <label for="e-saida">Tasa anual de salida</label>
+      <div class="inwrap"><input id="e-saida" inputmode="decimal" autocomplete="off" data-clarity-mask="true"><span>%</span></div>
+      <span class="help">Salidas del último año divididas por el promedio de personas. Como referencia, en EE. UU. y Canadá salió el 19% de los asociados en 2025.</span>
+      <div class="err" id="e-saida-err" aria-live="polite"></div>
+    </div>
+    <div class="actions"><button class="cbtn" id="e-calc">Ver el resultado</button><button class="cbtn ghost" data-go="e1">Volver</button></div>
+  </section>
+
+  <section class="screen" id="s-e3" aria-labelledby="h-e3">
+    <ol class="steps" aria-label="Paso 3 de 3"><li class="done"></li><li class="done"></li><li class="done"></li></ol>
+    <h2 id="h-e3" tabindex="-1" aria-live="polite"></h2>
+    <div class="battery" id="e-battery" aria-hidden="true"></div>
+    <div class="legend" id="e-legend"></div>
+    <div class="comp" id="e-comp"></div>
+    <div class="block"><h3>Para comparar</h3><p>En el Reino Unido, Deloitte estimó este costo entre 2% y 9% de los ingresos de cada empleado. El máximo aquí puede ser mayor porque suma los límites altos de cada estudio y el costo de reemplazar a un abogado.</p></div>
+    <details>
+      <summary>Cómo calculamos</summary>
+      <ol>
+        <li>Presentismo = personas × 15,6% a 47,4% con agotamiento (ABA y Krill, 2026) × 10% a 12% de pérdida (Stewart, 2003; Hyeda y Handar, 2011) × costo promedio.</li>
+        <li>Ausencias = presentismo × 0,235 a 0,307 (Stewart, 2003; Deloitte, 2024).</li>
+        <li>Salidas = personas × tasa de salida × 11% a 59% ligadas a la salud mental (Deloitte, 2024) × 21% a 200% del costo anual para reemplazar (CAP, 2012; Gallup, 2019) × costo promedio.</li>
+        <li>Total = suma de las tres.</li>
+      </ol>
+      <p class="note"><a href="#" data-go="fuentes">Ver todas las fuentes</a></p>
+    </details>
+    <div class="actions"><button class="cbtn" data-go="fin">¿Y ahora?</button><button class="cbtn ghost" data-go="e1">Cambiar los números</button></div>
+  </section>
+
+  <section class="screen" id="s-fin" aria-labelledby="h-fin">
+    <h2 id="h-fin" tabindex="-1">¿Y ahora?</h2>
+    <div class="sub" id="desafio">
+      <h3>¿Quieres seguir practicando?</h3>
+      <p>Inscríbete en el Desafío de 7 días en español: recibes esta calculadora en tu correo y, desde mañana, una práctica corta por día durante siete días.</p>
+      <form class="lp-brevo" method="POST" action="https://5ec22d1a.sibforms.com/serve/MUIFAHxFebna2MmM5aKMIwHLt2d_Zm4P9ptNovcNuzDPx6CZ8aQqRlsdBbcKkbt0jHAfQS5-DdkQPGqlO4pcINRnT4tjw4oqM1OL4AOML_9ae0rEscLNXcKnzDAJDP1vmR45kJ2ixgIjYWkmiypRDKIaSs1x3aRdNZtFjPS5xNGwJMixVNf6cBgccbGVcq6MAsZb3URbnqtkqQ8v7A==" novalidate>
+        <div class="row2">
+          <div><label for="d-nombre">Nombre</label><input id="d-nombre" name="FIRSTNAME" type="text" autocomplete="given-name" required data-clarity-mask></div>
+          <div><label for="d-correo">Correo</label><input id="d-correo" name="EMAIL" type="email" autocomplete="email" required data-clarity-mask></div>
+        </div>
+        <label class="consent"><input type="checkbox" name="OPT_IN" value="1" required><span>Acepto recibir correos del Programa Advocacia Consciente. Puedo darme de baja cuando quiera.</span></label>
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <input type="hidden" name="locale" value="es">
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <button class="cbtn" type="submit">Quiero los 7 días</button>
+      </form>
+      <p class="disc">Usamos tu nombre y tu correo solo para enviarte el Desafío de 7 días y correos del Programa Advocacia Consciente, a través del servicio de correo Brevo, conforme a la LGPD (Brasil) y al RGPD (Unión Europea). Puedes darte de baja en cualquier momento con el enlace al final de cada correo, o pedir la eliminación de tus datos a contato@advocaciaconsciente.com. Más información en la <a href="/politica-de-privacidade.html">Política de Privacidad</a> (en portugués).</p>
+    </div>
+    <div class="block"><h3>Para estudios</h3><p>El Programa Advocacia Consciente lleva charlas y programas a estudios jurídicos y facultades. Si hay recolección de datos, es voluntaria, con consentimiento, y el estudio recibe solo resultados agregados y anónimos.</p><a class="cbtn" href="mailto:contato@advocaciaconsciente.com?subject=Calculadora%20-%20Chile" data-track="email">Escribir a contato@advocaciaconsciente.com</a></div>
+    <p class="care">Si el cansancio pesa mucho, habla con un profesional de la salud. En Chile, la Línea de Prevención del Suicidio del Ministerio de Salud atiende gratis las 24 horas en el *4141.</p>
+    <div class="actions"><button class="cbtn ghost" data-go="home">Empezar de nuevo</button></div>
+  </section>
+
+  <section class="screen" id="s-fuentes" aria-labelledby="h-fuentes">
+    <h2 id="h-fuentes" tabindex="-1">Fuentes y método</h2>
+    <p class="lead">Las mismas fuentes de la calculadora en portugués, consultadas en octubre de 2026. Cuando no hay datos de abogados, indicamos el país del estudio.</p>
+    <ul class="sources">
+      <li>Stewart WF y colegas. Cost of lost productive work time among US workers with depression. JAMA, 2003. <a href="https://jamanetwork.com/journals/jama/fullarticle/196766" target="_blank" rel="noopener">Abrir</a></li>
+      <li>Hyeda A, Handar Z. Avaliação da produtividade na síndrome de burnout. Revista Brasileira de Medicina do Trabalho, 2011. <a href="https://www.rbmt.org.br/details/90/pt-BR/avaliacao-da-produtividade-na-sindrome-de-burnout" target="_blank" rel="noopener">Abrir</a></li>
+      <li>ABA CoLAP y Krill Strategies. Estudio nacional sobre salud mental de abogados, septiembre de 2026. <a href="https://www.americanbar.org/news/abanews/aba-news-archives/2026/09/new-lawyer-mental-health-study/" target="_blank" rel="noopener">Abrir</a></li>
+      <li>Deloitte UK. Mental health and employers, mayo de 2024. <a href="https://www.deloitte.com/uk/en/about/press-room/poor-mental-health-costs-uk-employers-51-billion-a-year-for-employees.html" target="_blank" rel="noopener">Abrir</a></li>
+      <li>Boushey H, Glynn SJ. There are significant business costs to replacing employees. Center for American Progress, 2012. <a href="https://www.americanprogress.org/article/there-are-significant-business-costs-to-replacing-employees/" target="_blank" rel="noopener">Abrir</a></li>
+      <li>Gallup. This fixable problem costs U.S. businesses $1 trillion, 2019. <a href="https://www.gallup.com/workplace/247391/fixable-problem-costs-businesses-trillion.aspx" target="_blank" rel="noopener">Abrir</a></li>
+      <li>Ministerio de Salud de Chile. Línea *4141 de prevención del suicidio. <a href="https://www.minsal.cl/ministerio-de-salud-anuncio-fono-4141-de-prevencion-del-suicidio/" target="_blank" rel="noopener">Abrir</a></li>
+    </ul>
+    <div class="actions"><button class="cbtn ghost" id="back-from-sources">Volver</button></div>
+  </section>
+</main>
+<div class="calc-foot">
+  Estimación educativa basada en estudios publicados. No es diagnóstico, predicción ni promesa de resultado. Los números de la calculadora no se guardan. <a href="#" data-go="fuentes">Fuentes y método</a>. Programa Advocacia Consciente · contato@advocaciaconsciente.com
+</div>
+<footer>
+  <div class="wrap legal" style="padding-top:32px">
+    <span>© <span id="ano">2026</span> Advocacia Consciente · Aline Vidanes</span>
+  </div>
+</footer>
+<a class="wa" href="https://wa.me/32471634305" data-wa aria-label="WhatsApp" data-track="whatsapp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+  <span>Escríbame</span>
+</a>
+<script>
+(function(){
+  var M={L:[0.10,0.12],P:[0.156,0.474],AUS:[19/81,7.3/23.8],S:[0.11,0.59],R:[0.21,2.00]};
+  var money=new Intl.NumberFormat('es-CL',{maximumFractionDigits:0});
+  var money2=new Intl.NumberFormat('es-CL',{minimumFractionDigits:0,maximumFractionDigits:2});
+  var int=money, dec1=new Intl.NumberFormat('es-CL',{minimumFractionDigits:1,maximumFractionDigits:1});
+  var pct=function(x){return dec1.format(x*100)+'%';};
+  var $=function(id){return document.getElementById(id);};
+  var current='home', lastPath='home';
+  function go(name){
+    if(name==='fuentes'){lastPath=current;}
+    document.querySelectorAll('.calc .screen').forEach(function(s){s.classList.remove('on');});
+    var el=$('s-'+name); el.classList.add('on'); current=name;
+    var h=el.querySelector('h1,h2'); if(h){h.setAttribute('tabindex','-1'); h.focus({preventScroll:true});}
+    window.scrollTo(0,0);
+    window.dataLayer=window.dataLayer||[]; window.dataLayer.push({event:'calculadora_paso',paso:name});
+  }
+  document.addEventListener('click',function(ev){var t=ev.target.closest('[data-go]'); if(!t) return; ev.preventDefault(); go(t.getAttribute('data-go'));});
+  $('back-from-sources').addEventListener('click',function(){go(lastPath);});
+  function parse(v){
+    v=String(v||'').trim().replace(/[\s$%]/g,'');
+    if(!v) return NaN;
+    if(v.indexOf(',')>-1){v=v.replace(/\./g,'').replace(',','.');}
+    else if(/^\d{1,3}(\.\d{3})+$/.test(v)){v=v.replace(/\./g,'');}
+    var n=Number(v); return isFinite(n)?n:NaN;
+  }
+  function need(id,cond,msg){var ok=cond($(id).value); $(id+'-err').textContent=ok?'':msg; $(id).setAttribute('aria-invalid',ok?'false':'true'); return ok;}
+  var gt0=function(v){return parse(v)>0;};
+  function battery(el,lo,hi,label){
+    lo=Math.min(Math.max(lo,0),1); hi=Math.min(Math.max(hi,0),1);
+    var W=560,Hh=120,pad=8,inner=W-2*pad-18,x0=pad+4,keep=inner*(1-hi),band=inner*(hi-lo);
+    el.innerHTML='<svg viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+label+'"><defs><pattern id="hatch'+el.id+'" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#C2502E" opacity=".25"/><line x1="0" y1="0" x2="0" y2="8" stroke="#C2502E" stroke-width="4"/></pattern></defs>'+
+      '<rect x="'+pad+'" y="'+pad+'" width="'+(W-2*pad-14)+'" height="'+(Hh-2*pad)+'" rx="10" fill="none" stroke="#141312" stroke-width="3"/>'+
+      '<rect x="'+(W-pad-12)+'" y="'+(Hh/2-18)+'" width="10" height="36" rx="3" fill="#141312"/>'+
+      '<rect x="'+x0+'" y="'+(pad+4)+'" width="'+keep+'" height="'+(Hh-2*pad-8)+'" rx="6" fill="#141312"/>'+
+      '<rect x="'+(x0+keep)+'" y="'+(pad+4)+'" width="'+band+'" height="'+(Hh-2*pad-8)+'" fill="url(#hatch'+el.id+')"/></svg>';
+  }
+  function legend(el,base,lo,hi){
+    el.innerHTML='<span><i style="background:#141312"></i>'+base+' que sigue rindiendo</span><span><i style="background:#C2502E;opacity:.8"></i>rango que el agotamiento puede consumir ('+pct(lo)+' a '+pct(hi)+')</span>'+(lo>0?'<span><i style="border:1.5px solid #141312"></i>parte ya perdida en el escenario mínimo</span>':'');
+  }
+  $('v-calc').addEventListener('click',function(){
+    var ok=need('v-renda',gt0,'Ingresa un número mayor que cero.') & need('v-horas',function(v){var n=parse(v);return n>0&&n<=112;},'Ingresa un número entre 1 y 112.') & need('v-semanas',function(v){var n=parse(v);return n>0&&n<=52;},'Ingresa un número entre 1 y 52.');
+    if(!ok) return;
+    var renda=parse($('v-renda').value), horas=parse($('v-horas').value), sem=parse($('v-semanas').value);
+    var anual=renda*12, hAno=horas*sem, hora=anual/hAno;
+    var pres=[anual*M.L[0],anual*M.L[1]], aus=[pres[0]*M.AUS[0],pres[1]*M.AUS[1]], tot=[pres[0]+aus[0],pres[1]+aus[1]];
+    var hEq=[hAno*M.L[0]*(1+M.AUS[0]),hAno*M.L[1]*(1+M.AUS[1])], share=[tot[0]/anual,tot[1]/anual];
+    $('h-v2').innerHTML='El agotamiento puede costar de <span class="num">'+money.format(tot[0])+'</span> a <span class="num">'+money.format(tot[1])+'</span> al año en tiempo de trabajo.';
+    battery($('v-battery'),share[0],share[1],'Batería del ingreso anual: de '+pct(share[0])+' a '+pct(share[1])+' puede consumirse');
+    legend($('v-legend'),'ingreso',share[0],share[1]);
+    $('v-sub').textContent='Equivale a '+int.format(hEq[0])+' a '+int.format(hEq[1])+' horas, o '+dec1.format(hEq[0]/horas)+' a '+dec1.format(hEq[1]/horas)+' semanas de tu año. Tu hora de trabajo vale '+money2.format(hora)+'.';
+    go('v2');
+  });
+  $('e-next').addEventListener('click',function(){
+    var ok=need('e-pessoas',function(v){var n=parse(v);return n>=1&&Math.floor(n)===n;},'Ingresa un número entero mayor que cero.') & need('e-custo',gt0,'Ingresa un número mayor que cero.');
+    if(!ok) return; go('e2');
+  });
+  $('e-calc').addEventListener('click',function(){
+    if(!need('e-saida',function(v){var n=parse(v);return n>=0&&n<=100;},'Ingresa un porcentaje entre 0 y 100.')) return;
+    var N=parse($('e-pessoas').value), C=parse($('e-custo').value), T=parse($('e-saida').value)/100, folha=N*C;
+    var comp=[{nome:'Trabajar sin rendir (presentismo)',v:[N*M.P[0]*M.L[0]*C,N*M.P[1]*M.L[1]*C]},null,{nome:'Salidas y reemplazo',v:[N*T*M.S[0]*M.R[0]*C,N*T*M.S[1]*M.R[1]*C]}];
+    comp[1]={nome:'Ausencias',v:[comp[0].v[0]*M.AUS[0],comp[0].v[1]*M.AUS[1]]};
+    var tot=[0,0]; comp.forEach(function(c){tot[0]+=c.v[0];tot[1]+=c.v[1];});
+    var share=[tot[0]/folha,tot[1]/folha];
+    $('h-e3').innerHTML='El agotamiento puede costarle al estudio de <span class="num">'+money.format(tot[0])+'</span> a <span class="num">'+money.format(tot[1])+'</span> al año; de '+pct(share[0])+' a '+pct(share[1])+' de la planilla, o '+money.format(tot[0]/N)+' a '+money.format(tot[1]/N)+' por persona.';
+    battery($('e-battery'),share[0],share[1],'Batería de la planilla anual: de '+pct(share[0])+' a '+pct(share[1])+' puede consumirse');
+    legend($('e-legend'),'planilla',share[0],share[1]);
+    var maxV=Math.max.apply(null,comp.map(function(c){return c.v[1];}))||1;
+    var top=comp.slice().sort(function(a,b){return (b.v[0]+b.v[1])-(a.v[0]+a.v[1]);})[0];
+    $('e-comp').innerHTML=comp.map(function(c){var lo=c.v[0]/maxV*100,hi=c.v[1]/maxV*100;return '<div class="row"><div class="lab"><b>'+c.nome+(c===top?'<span class="flag">el que más pesa</span>':'')+'</b><span class="val">'+money.format(c.v[0])+' a '+money.format(c.v[1])+'</span></div><div class="track" aria-hidden="true"><div class="lo" style="width:'+lo+'%"></div><div class="hi" style="left:'+lo+'%;width:'+(hi-lo)+'%"></div></div></div>';}).join('');
+    go('e3');
+  });
+  document.querySelectorAll('.calc input').forEach(function(i){i.addEventListener('keydown',function(e){if(e.key!=='Enter')return;var b=i.closest('.screen').querySelector('.actions .cbtn:not(.ghost)');if(b)b.click();});});
+})();
+</script>
+<script src="/site.js"></script>
+<script>
+document.querySelectorAll('[data-wa]').forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("Hola, Aline. Vi el sitio de Advocacia Consciente y me gustaría recibir información sobre el programa.");});
+</script>
+<script src="/tracking.js"></script>
+<script>
+(function(){
+  var MSG={invalid:'Revisa tu nombre, tu correo y la casilla de consentimiento.',erro:'No pudimos guardar tu inscripción. Inténtalo de nuevo.'};
+  document.querySelectorAll('form.lp-brevo').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var st=f.querySelector('.form-status'), bt=f.querySelector('button[type=submit]');
+      if(!f.checkValidity()){st.className='form-status err';st.textContent=MSG.invalid;f.reportValidity();return;}
+      bt.disabled=true; st.className='form-status'; st.textContent='Enviando...';
+      var x=new XMLHttpRequest();
+      x.open('POST', f.getAttribute('action')+'?isAjax=1');
+      x.onload=function(){
+        var r={}; try{r=JSON.parse(x.responseText);}catch(err){}
+        if(r.success){
+          window.dataLayer=window.dataLayer||[]; window.dataLayer.push({event:'desafio_lead',idioma:'es'});
+          var box=f.parentNode; f.remove(); var ok=document.createElement('p'); ok.className='ok'; ok.setAttribute('role','status');
+          ok.textContent='¡Listo! Revisa tu correo: ahí está la calculadora. Mañana empieza el Desafío de 7 días. Si no lo ves, mira en la carpeta de spam.';
+          box.insertBefore(ok, box.querySelector('.disc')); return;
+        }
+        bt.disabled=false; st.className='form-status err'; st.textContent=r.errors?MSG.invalid:MSG.erro;
+      };
+      x.onerror=function(){ bt.disabled=false; st.className='form-status err'; st.textContent=MSG.erro; };
+      x.send(new FormData(f));
+    });
+  });
+})();
+</script>
+</body>
+</html>
